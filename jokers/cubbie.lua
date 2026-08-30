@@ -45,8 +45,8 @@ SMODS.Joker {
                         card.ability.extra.cubbiePacks = (card.ability.extra.cubbiePacks) + card.ability.extra.var_cubbiePacks0
                         return true
                     end,
-                    message = +5 Mult
-                    colour = G.C.GREEN
+                    message = '+5 Mult',
+                    colour = G.C.RED
                 }
             end
         end
