@@ -8,7 +8,7 @@
   "description": "Fundamental Paper Education, now a Balatro mod! FPE was created by the awesome Kaaatie/A3DGhost.",
   "prefix": "fpe",
   "main_file": "main.lua",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "priority": 0,
   "badge_colour": "1B202A",
   "badge_text_colour": "C3D4F1",

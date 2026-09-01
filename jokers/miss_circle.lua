@@ -47,6 +47,7 @@ SMODS.Joker {
                      card.ability.extra.missCirclexMult = (card.ability.extra.missCirclexMult) + 0.5
                      return true
                    end,
+                   sound = 'fpe_circle_scale',
                    message = "You owe me an Oreo...", 
                    colour = G.C.RED
                 }

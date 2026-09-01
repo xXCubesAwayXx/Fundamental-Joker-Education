@@ -24,16 +24,5 @@ SMODS.Joker {
     end,
     remove_from_deck = function(self, card, from_debuff)
         G.GAME.modifiers.booster_size_mod = (G.GAME.modifiers.booster_size_mod or 0) - 1
-    end,
-    calculate = function(self, card, context)
-        if context.buying_self and not context.blueprint then
-            do
-                G.P_CENTERS["j_fpe_chip"].in_pool = function() return true end
-                return {
-                    message = "yarrr! >:3",
-                    colour = G.C.MONEY
-                }
-            end
-        end
     end
 }

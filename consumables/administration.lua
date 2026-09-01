@@ -36,6 +36,7 @@ SMODS.Consumable {
         end
     end,
     can_use = function(self, card)
-        return true
+        return (G.consumeables and #G.consumeables.cards < G.consumeables.config.card_limit) or
+            (card.area == G.consumeables)
     end
 }

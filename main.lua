@@ -79,6 +79,14 @@ SMODS.Atlas({
     atlas_table = "ASSET_ATLAS"
 })
 
+SMODS.Atlas({
+    key = "CustomSleeves",
+    path = "CustomSleeves.png",
+    px = 73,
+    py = 95,
+    atlas_table = "ASSET_ATLAS"
+})
+
 local NFS = require("nativefs")
 to_big = to_big or function(a) return a end
 lenient_bignum = lenient_bignum or function(a) return a end
@@ -203,5 +211,7 @@ assert(SMODS.load_file("seals/a_seal.lua"))()
 assert(SMODS.load_file("vouchers/class_merchant.lua"))()
 assert(SMODS.load_file("vouchers/class_tycoon.lua"))()
 assert(SMODS.load_file("decks/learning_deck.lua"))()
+assert(SMODS.load_file("decks/sleeves.lua"))()
 assert(SMODS.load_file("boosters.lua"))()
 assert(SMODS.load_file("tags.lua"))()
+assert(SMODS.load_file("quips.lua"))()
