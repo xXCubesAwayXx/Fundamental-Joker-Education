@@ -16,7 +16,7 @@ SMODS.Consumable {
     },
     cost = 15,
     unlocked = true,
-    discovered = true,
+    discovered = false,
     hidden = true,
     soul_set = 'fpe_class',
     soul_rate = 0.003,

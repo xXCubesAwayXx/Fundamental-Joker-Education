@@ -17,7 +17,7 @@ SMODS.Consumable {
     },
     cost = 5,
     unlocked = true,
-    discovered = true,
+    discovered = false,
     atlas = 'CustomConsumables',
     loc_vars = function(self, info_queue, card)
         return {

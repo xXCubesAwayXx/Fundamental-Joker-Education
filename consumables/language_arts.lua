@@ -24,7 +24,7 @@ SMODS.Consumable {
     },
     cost = 5,
     unlocked = true,
-    discovered = true,
+    discovered = false,
     atlas = 'CustomConsumables',
     loc_vars = function(self, info_queue, card)
         local new_numerator0, new_denominator0 = SMODS.get_probability_vars(card, self.config.extra.numerator_0, self.config.extra.odds_0, 'c_fpe_language_arts')

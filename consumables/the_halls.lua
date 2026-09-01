@@ -15,7 +15,7 @@ SMODS.Consumable {
     },
     cost = 5,
     unlocked = true,
-    discovered = true,
+    discovered = false,
     atlas = 'CustomConsumables',
     use = function(self, card, area, copier)
         do
