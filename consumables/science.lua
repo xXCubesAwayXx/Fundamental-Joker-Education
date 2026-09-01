@@ -43,7 +43,7 @@ SMODS.Consumable {
          end
         local most_played = _handname
             if SMODS.pseudorandom_probability(card, 'group0', card.ability.extra.numerator_0, card.ability.extra.odds_0, 'c_fpe_science', false) then
-      SMODS.upgrade_poker_hands({hand = most_played, from = card, level_up = 3})
+      SMODS.upgrade_poker_hands({hands = most_played, from = card, level_up = 3})
                 return {
                     message = localize('k_level_up_ex'),
                     colour = G.C.GREEN
