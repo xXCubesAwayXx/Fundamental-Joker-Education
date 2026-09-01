@@ -21,5 +21,5 @@ SMODS.ConsumableType {
 SMODS.UndiscoveredSprite {
     key = 'class',
     atlas = 'CustomConsumables',
-    pos = {x = 2, y = 3}
+    pos = {x = 1, y = 2}
 }

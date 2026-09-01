@@ -10,7 +10,7 @@
   "main_file": "main.lua",
   "version": "0.2.1",
   "priority": 0,
-  "badge_colour": "1B202A",
+  "badge_colour": "303752",
   "badge_text_colour": "C3D4F1",
   "dependencies": [],
   "conflicts": [],
