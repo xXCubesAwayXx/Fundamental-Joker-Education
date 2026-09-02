@@ -57,7 +57,7 @@ SMODS.JimboQuip({
 })
 
 SMODS.JimboQuip({
-    key = 'circle_win_gradeA',
+    key = 'circle_win_gradea',
     type = 'win',
     loc_txt = {
             [1] = 'Your final grade: A+!',
@@ -71,7 +71,7 @@ SMODS.JimboQuip({
 		G.C.SET.Class },
         times = 1,
         pitch = 1,
-        sound = 'fpe_quip_win_gradeA'
+        sound = 'fpe_quip_win_gradea'
     },
 })
 
@@ -209,7 +209,7 @@ SMODS.JimboQuip({
 })
 
 SMODS.JimboQuip({
-    key = 'circle_lose_gradeF',
+    key = 'circle_lose_gradef',
     type = 'loss',
     loc_txt = {
             [1] = 'Your final grade: F.',
@@ -223,7 +223,7 @@ SMODS.JimboQuip({
 		G.C.SET.Class },
         times = 1,
         pitch = 1,
-        sound = 'fpe_quip_lose_gradeF'
+        sound = 'fpe_quip_lose_gradef'
     },
 })
 

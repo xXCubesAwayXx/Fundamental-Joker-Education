@@ -37,8 +37,8 @@ SMODS.Sound({
 })
 
 SMODS.Sound({
-    key="quip_win_gradeA",
-    path="circle_quips/quip_win_gradeA.ogg",
+    key="quip_win_gradea",
+    path="circle_quips/quip_win_gradea.ogg",
     pitch=1,
     volume=1,
 })
@@ -94,8 +94,8 @@ SMODS.Sound({
 })
 
 SMODS.Sound({
-    key="quip_lose_gradeF",
-    path="circle_quips/quip_lose_gradeF.ogg",
+    key="quip_lose_gradef",
+    path="circle_quips/quip_lose_gradef.ogg",
     pitch=1,
     volume=1,
 })
