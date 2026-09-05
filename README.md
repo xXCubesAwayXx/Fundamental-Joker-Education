@@ -1,7 +1,7 @@
 # Fundamental Joker Education
 <img width="1920" height="1080" alt="thumbnail" src="https://github.com/user-attachments/assets/07d1cda4-cafd-472a-b8a5-6f31434f6923" />
 
-###Fundamental Paper Education, now as a Balatro mod! FPE was made by the awesome Kaaatie / A3DGhost!\
+### Fundamental Paper Education, now as a Balatro mod! FPE was made by the awesome Kaaatie / A3DGhost!\
 [Watch the OG video that started the fandom here!*](https://www.youtube.com/watch?v=V88_lZRwP70)\
 <sup>*This is a reupload, the true original video sadly no longer exists due to the creator leaving the internet and deleting all their socials.</sup>
 
