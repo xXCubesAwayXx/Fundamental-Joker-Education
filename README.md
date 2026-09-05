@@ -1,6 +1,7 @@
 # Fundamental Joker Education
-Fundamental Paper Education, now as a Balatro mod! FPE was made by the awesome Kaaatie / A3DGhost
-<img width="142" height="189" alt="image" src="https://github.com/user-attachments/assets/d643d475-7a1a-4161-8c28-1c688390e9fb" />
+Fundamental Paper Education, now as a Balatro mod! FPE was made by the awesome Kaaatie / A3DGhost!\
+[Watch the OG video that started the fandom here!*](https://www.youtube.com/watch?v=V88_lZRwP70)\
+<sup>*This is a reupload, the true original video sadly no longer exists due to the creator leaving the internet and deleting all their socials.</sup>
 
 # Features
 26 Jokers (11 Uncommon, 5 Rare, 9 Legendary)
