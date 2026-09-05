@@ -162,7 +162,7 @@ Here they all are in order:
 
 **The Notebook**: (Tarot) Applies the Paper enhancement to 1 selected card.
 
-**Teacher's Lounge**: (Spectral) 0.3% chance to replace any Class Card in a Schedule Pack (the booster packs for the Class Card set) or any Spectral Card in a Spectral Pack. Kind of like the Soul. On use, it spawns one of the Teacher jokers (on the last post, it would be the jokers in images 5 and 6.)
+**Teacher's Lounge**: (Spectral) 0.3% chance to replace any Class Card in a Schedule Pack (the booster packs for the Class Card set) or any Spectral Card in a Spectral Pack, kind of like the Soul. On use, it spawns one of the Teacher jokers (the jokers in images 5 and 6).
 
 **???**: (Spectral) Same spawning conditions as the Teacher's Lounge, but I'm warning you, do not go in there. Some say it awakens a great evil laying at rest inside that room. Actually, you know what? No point being coy, this card spawns a copy of Alice in your Jokers.
 
