@@ -29,7 +29,7 @@ SMODS.Enhancement {
     end,
     calculate = function(self, card, context)
         if context.main_scoring and context.cardarea == G.play then
-            return {xchips = card.ability.extra.Xchips}
+            return {x_chips = card.ability.extra.Xchips}
         end
         if context.after and context.cardarea == G.play and SMODS.pseudorandom_probability(card, "fpe_paper", 1, card.ability.extra.odds) then
             SMODS.destroy_cards(card)
