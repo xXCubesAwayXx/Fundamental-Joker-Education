@@ -4,7 +4,7 @@ SMODS.Booster {
     loc_txt = {
         name = "Schedule Pack",
         text = {
-            [1] = 'Choose {C:attention}1{} of up to {C:attention}5{} {C:class}Class{} cards to be used immediately'
+            [1] = 'Choose {C:attention}1{} of up to {C:attention}3{} {C:class}Class{} cards to be used immediately'
         },
         group_name = "Schedule Pack"
     },
@@ -57,7 +57,7 @@ SMODS.Booster {
     loc_txt = {
         name = "Schedule Pack",
         text = {
-            [1] = 'Choose {C:attention}1{} of up to {C:attention}5{} {C:class}Class{} cards to be used immediately'
+            [1] = 'Choose {C:attention}1{} of up to {C:attention}3{} {C:class}Class{} cards to be used immediately'
         },
         group_name = "Schedule Pack"
     },
