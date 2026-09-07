@@ -4,8 +4,8 @@ SMODS.Enhancement {
     name = "Paper",
     pos = { x = 0, y = 0 },
     config = {
-            Xchips = 1.5,
         extra = {
+            Xchips = 1.5,
             odds = 4
         }
     },
@@ -21,16 +21,16 @@ SMODS.Enhancement {
         local numerator, denominator = SMODS.get_probability_vars(card, 1, card.ability.extra.odds, "fpe_paper")
         return {
             vars = {
-                card.ability.Xchips,
+                card.ability.extra.Xchips,
                 numerator,
                 denominator
             }
         }
     end,
     calculate = function(self, card, context)
-        if context.main then
-		return { xchips = card.ability.xchips }
-end
+        if context.main_scoring and context.cardarea == G.play then
+            return {x_chips = card.ability.extra.Xchips}
+        end
         if context.after and context.cardarea == G.play and SMODS.pseudorandom_probability(card, "fpe_paper", 1, card.ability.extra.odds) then
             SMODS.destroy_cards(card)
         end
