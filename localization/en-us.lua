@@ -415,7 +415,23 @@ return {
 					"cards total in",
 					"the shop",
 					},
-				}
+				},
+				v_fpe_class_acclimator = {
+				        name = 'Class Acclimator',
+						text = {
+							"{C:class}Class{} cards appear",
+							"{C:attention}X#1#{} more frequently",
+							"in the shop",
+							"Allows control of the",
+							"shop's {C:class}Class Rate{}",
+							"{C:inactive}(Check{} {C:attention}Run Info{}{C:inactive}){}",
+						},
+  				unlock = {
+					"Buy {C:attention}100{} {C:class}Class",
+					"cards total in",
+					"the shop",
+				},
+			},
 		},
 		
 		Pack = {
@@ -464,30 +480,95 @@ return {
 					'{C:planet}Levels up{} played hand when {C:attention}scored{}'
 				}
 			},
-		},
-				
-		
-		Cryptid = {
-			Voucher = {
-				v_fpe_class_acclimator = {
-				        name = 'Class Acclimator',
-						text = {
-							"{C:class}Class{} cards appear",
-							"{C:attention}X#1#{} more frequently",
-							"in the shop",
-							"Allows control of the",
-							"shop's {C:class}Class Rate{}",
-							"{C:inactive}(Check{} {C:attention}Run Info{}{C:inactive}){}",
-						},
-  				unlock = {
-					"Buy {C:attention}100{} {C:class}Class",
-					"cards total in",
-					"the shop",
+			["undiscovered_class"] = {
+				["name"] = "Not Discovered",
+				["text"] = {
+					"Purchase or use this card in an unseeded run to learn what it does",
 				},
 			},
 		},
-	}
+
 },
 
 misc = {
+		["quips"] = {
+			["fpe_circle_win_entitle"] = {
+				"No this does not entitle",
+				"you to my Oreos.",
+			},
+			["fpe_circle_lose_oreos"] = {
+				"No amount of Oreos",
+				"will save you now.",
+			},
+			["fpe_circle_win_bestgradeallday"] = {
+				"Best test grade I've seen all day.",
+				"Good work.",
+			},
+			["fpe_circle_lose_failedme"] = {
+				"You have failed me...",
+			},
+			["fpe_circle_lose_abbie"] = {
+				"Oh, come on!",
+				"I've seen Abbie do better than that!",
+			},
+			["fpe_circle_win_jimboquote"] = {
+				"Looks like I've",
+				"taught you well!",
+			},
+			["fpe_circle_win_seemeafterclass"] = {
+				"Keep up the good work, or",
+				"see me after class...",
+			},
+			["fpe_circle_win_gradea"] = {
+				"Your final grade: A+!",
+				"Top of the class!",
+			},
+			["fpe_circle_lose_housewinsagain"] = {
+				"Looks like the house",
+				"wins again, failure!",
+			},
+			["fpe_circle_win_performanceinyears"] = {
+				"This is the first time I've been",
+				"genuinely happy with someone's",
+				"performance in years.",
+			},
+			["fpe_circle_win_morelikeit"] = {
+				"That's more like it...",
+			},
+			["fpe_circle_lose_bluffing"] = {
+				"How much bluffing were you",
+				"trying to let past me?",
+			},
+			["fpe_circle_lose_thisinstant"] = {
+				"You'd best start a",
+				"new run this instant.",
+			},
+			["fpe_circle_win_acceptable"] = {
+				"This is...",
+				"acceptable.",
+			},
+			["fpe_circle_lose_gradef"] = {
+				"Your final grade: F.",
+				"You'd best start running.",
+			},
+			["fpe_circle_lose_vendingmachine"] = {
+				"The vending machine broke",
+				"on me yesterday. Now I know",
+				"who to take my anger out on!",
+			},
+		},
+		["dictionary"] = {
+			["k_booster_group_p_fpe_schedule_pack_normal_2"] = "Schedule Pack",
+			["b_class_cards"] = "Class Cards",
+			["k_booster_group_p_fpe_schedule_pack_mega"] = "Schedule Pack",
+			["k_booster_group_p_fpe_schedule_pack_normal_1"] = "Schedule Pack",
+			["k_booster_group_p_fpe_schedule_pack_jumbo"] = "Schedule Pack",
+			["k_class"] = "Class",
+			["b_class_rate"] = "Class Rate",
+		},
+		["labels"] = {
+			["fpe_a_seal_seal"] = "A+ Seal",
+		},
+}
+
 }

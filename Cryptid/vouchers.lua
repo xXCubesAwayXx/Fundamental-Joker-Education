@@ -16,17 +16,6 @@ local class_acclimator = { -- Class Merchant T3; Classes are free, spawn rate co
 		},
 	},
 	key = "class_acclimator",
-        loc_txt = {
-        ['name'] = 'Class Acclimator',
-        ['text'] = {
-            [1] = "{C:class}Class{} cards appear",
-            [2] = "{C:attention}6x{} more frequently",
-            [3] = "in the shop",
-            [4] = "Allows control of the",
-            [5] = "shop's {C:class}Class Rate{}",
-            [6] = "{C:inactive}(Check{} {C:attention}Run Info{}{C:inactive}){}",
-          },
-        },
 	config = { extra = 24 / 4, extra_disp = 6 },
 	atlas = "CryptidVouchers",
 	pos = { x = 0, y = 0 },
@@ -55,7 +44,7 @@ local class_acclimator = { -- Class Merchant T3; Classes are free, spawn rate co
 -- Class Acclimator slider
 
 if Cryptid.setup_voucher_rate_adjuster then
-Cryptid.setup_voucher_rate_adjuster("v_fpe_class_acclimator", "b_class_rate", "class", G.C.SECONDARY_SET.class)
+Cryptid.setup_voucher_rate_adjuster("v_fpe_class_acclimator", "b_class_rate", "class", G.C.CLASS)
 end
 
 
