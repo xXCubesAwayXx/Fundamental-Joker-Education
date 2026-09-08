@@ -3,8 +3,7 @@ SMODS.Joker {
     loc_txt = {
         ['name'] = 'Miss Emily',
         ['text'] = {
-            [1] = '{C:blue}+1 Play{} Size',
-            [2] = '{C:red}+1 Discard{} Size'
+            [1] = '{C:attention}+1 card selection limit{}',
         }
     },
     pos = {

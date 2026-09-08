@@ -14,7 +14,7 @@ SMODS.Consumable {
     loc_txt = {
         ['name'] = 'The Notebook',
         ['text'] = {
-            [1] = '{C:enhanced}Enhances{} {C:attention}1 selected card{} into a {C:enhanced}Paper{} card'
+            [1] = 'Enhances {C:attention}1 selected card{} into a {C:enhanced}Paper Card{}'
         }
     },
     cost = 3,
