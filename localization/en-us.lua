@@ -51,7 +51,7 @@ return {
 			c_fpe_science = {
 				name = "Science",
 				text = {
-					'{C:green}#1# in #2# chance{} to {C:planet}level up{} your'',
+					'{C:green}#1# in #2# chance{} to {C:planet}level up{} your',
 					'{C:attention}most played hand{} by {C:planet}3 levels{}'
 				}
 			},
@@ -175,14 +175,14 @@ return {
 		Joker = {
 -- Nice Kids
 			j_fpe_claire = {
-				name = "Claire"
+				name = "Claire",
 				text = {
 					'At end of round, {C:money}multiplies money by 1.5{}',
 					'{C:inactive}Max{} {C:money}$10{}',
 				}
 			},
 			j_fpe_engel = {
-				name = "Engel"
+				name = "Engel",
 				text = {
 					'If played hand {C:attention}triggers the Boss Blind effect{},',
 					'creates a random {C:attention}consumable{}',
@@ -190,21 +190,21 @@ return {
 				}
 			},
 			j_fpe_bubble = {
-				name = "Bubble"
+				name = "Bubble",
 				text = {
 					'{C:attention}When Boss Blind is defeated{}, creates a {C:attention}random Tag{}',
 					'{C:inactive}(Must have room){}'
 				}
 			},
 			j_fpe_abbie = {
-				name = "Abbie"
+				name = "Abbie",
 				text = {
 					'This Joker gains {C:blue}+15{} Chips when {C:attention}blind is skipped{}',
 					'{C:inactive}(Currently{} {C:blue}+#1#{} {C:inactive}Chips){}'
 				}
 			},
 			j_fpe_lana = {
-				name = "Lana"
+				name = "Lana",
 				text = {
 					'When {C:attention}blind is selected,{}',
 					'creates a random {C:class}Class{} card',
@@ -213,27 +213,27 @@ return {
 			},
 -- Popular Kids and Nerds
 			j_fpe_petunia = {
-				name = "Petunia"
+				name = "Petunia",
 				text = {
 					'{C:blue}+15{} Chips for every {C:attention}owned Joker{}',
 					'{C:inactive}Currently{} {C:blue}+#1#{} {C:inactive}Chips{}',
 				}
 			},
 			j_fpe_lizzy = {
-				name = "Lizzy"
+				name = "Lizzy",
 				text = {
 					'{C:green}1 in 8{} chance to add a random {C:dark_edition}Edition{} to {C:attention}scored cards{}',
 				}
 			},
 			j_fpe_kevin = {
-				name = "Kevin"
+				name = "Kevin",
 				text = {
 					'When {C:attention}exiting the shop,{} adds a random',
 					'{C:enhanced}Enhanced{} {C:attention}playing card{} to your deck'
 				}
 			},
 			j_fpe_cubbie = {
-				name = "Cubbie"
+				name = "Cubbie",
 				text = {
 					'{C:red}+5{} Mult for every {C:attention}booster pack{}',
 					'opened since {C:money}Joker was bought{}',
@@ -242,7 +242,7 @@ return {
 			},
 -- Chaotic Kids
 			j_fpe_robby = {
-				name = "Robby"
+				name = "Robby",
 				text = {
 					'After {C:attention}defeating the boss blind{},',
 					'consumes two random {C:attention}Consumables{} and',
@@ -250,7 +250,7 @@ return {
 				}
 			},
 			j_fpe_riley = {
-				name = "Riley"
+				name = "Riley",
 				text = {
 					'{C:green}1 in 8{} chance to {C:red}destroy discarded cards{} and {C:blue}gain {C:blue}+10{} Chips{}',
 					'{C:inactive}Currently{} {C:blue}+#1#{} {C:inactive}Chips{}',
@@ -258,26 +258,26 @@ return {
 				}
 			},
 			j_fpe_skell = {
-				name = "Skell"
+				name = "Skell",
 				text = {
 					'{X:mult,C:white}1.5{} Mult on {C:attention}first hand of round{}'
 				}
 			},
 			j_fpe_ruby = {
-				name = "Ruby"
+				name = "Ruby",
 				text = {
 					'{C:money}+1{} Voucher slot in the {C:money}shop{}'
 				}
 			},
 -- Bullies (and Chip)
 			j_fpe_edward = {
-				name = "Edward"
+				name = "Edward",
 				text = {
 					'{C:attention}Retriggers{} all {C:enhanced}Enhanced{} cards in the scoring hand'
 				}
 			},
 			j_fpe_oliver = {
-				name = "Oliver"
+				name = "Oliver",
 				text = {
 					'{C:red}+10{} Mult for all cards {C:attention}in your full deck{} with an {C:dark_edition}Edition{}',
 					'{C:inactive}(Currently{} {C:red}+#1#{} {C:inactive}Mult){}',
@@ -285,13 +285,13 @@ return {
 				}
 			},
 			j_fpe_zip = {
-				name = "Zip"
+				name = "Zip",
 				text = {
 					'{C:attention}Booster packs{} include {C:attention}1 extra card{}'
 				}
 			},
 			j_fpe_chip = {
-				name = "Chip"
+				name = "Chip",
 				text = {
 					'{C:attention}Booster packs{} allow you to {C:attention}choose 1 extra{} card',
 					'{C:dark_edition}Debugged by Kranlax!{}'
@@ -299,7 +299,7 @@ return {
 			},
 -- Murder Teachers
 			j_fpe_miss_circle = {
-				name = "Miss Circle"
+				name = "Miss Circle",
 				text = {
 					'This Joker gains {X:mult,C:white}0.5{} Mult when',
 					'{C:attention}scoring hand matches blind requirement on its own{}',
@@ -310,7 +310,7 @@ return {
 				}
 			},
 			j_fpe_miss_thavel = {
-				name = "Miss Thavel"
+				name = "Miss Thavel",
 				text = {
 					'When {C:attention}Blind{} is selected, creates a copy of {C:spectral}Grim{}',
 					'{C:inactive}(Must have room){}'
@@ -320,7 +320,7 @@ return {
 				}
 			},
 			j_fpe_miss_bloomie = {
-				name = "Miss Bloomie"
+				name = "Miss Bloomie",
 				text = {
 					"If discarded hand has only {C:attention}1{} card,",
 					"{C:red}destroys{} that card and creates {C:attention}2{} copies with",
@@ -332,7 +332,7 @@ return {
 				}
 			},	
 			j_fpe_mister_compass = {
-				name = "Mister Compass"
+				name = "Mister Compass",
 				text = {
 					'This Joker gains {X:chips,C:white}0.5{} Chips when',
 					'{C:attention}scoring hand matches blind requirement on its own{}',
@@ -344,7 +344,7 @@ return {
 			},	
 -- Nice Teachers
 			j_fpe_miss_emily = {
-				name = "Miss Emily"
+				name = "Miss Emily",
 				text = {
 					'{C:attention}+1 card selection limit{}',
 				},
@@ -353,7 +353,7 @@ return {
 				}
 			},
 			j_fpe_mister_demi = {
-				name = "Mister Demi"
+				name = "Mister Demi",
 				text = {
 					'{C:red}+2 Discards{} when {C:money}obtained,{}',
 					'then {C:attention}scales that amount{} every {C:attention}Ante{}',
@@ -364,7 +364,7 @@ return {
 				}
 			},
 			j_fpe_miss_sasha = {
-				name = "Miss Sasha"
+				name = "Miss Sasha",
 				text = {
 					'This Joker gains {C:blue}+1{} Hand Size for every scored {C:attention}2{}'
 				},
@@ -373,7 +373,7 @@ return {
 				}
 			},	
 			j_fpe_miss_grace = {
-				name = "Miss Grace"
+				name = "Miss Grace",
 				text = {
 					'{C:attention}Prevents death{} when {C:attention}score{} is over {C:attention}50% of blind requirement{}',
 					'{C:green}Does not destroy self{}'
@@ -384,7 +384,7 @@ return {
 			},	
 -- Other
 			j_fpe__lice = {
-				name = "Alice"
+				name = "Alice",
 				text = {
 					'{C:green}1 in 2{} chance to apply {C:dark_edition}Negative{} to {C:red}discarded{} {C:attention}face cards{}',
 					'Scales {X:mult,C:white}0.5{} Mult when {C:attention}ability is activated{}',
