@@ -12,7 +12,7 @@
 
 2 Secret Spectral Cards
 
-16 Class Cards, a new, pretty strong consumable type that can provide significant benefits - if the numbers are in your favor! With it comes 4 types of Schedule Pack; 2 normal, 1 Jumbo, 1 Mega.
+16 Class Cards, a new, pretty strong consumable type that can provide significant benefits - if the numbers are in your favor! With them comes a set of rate-altering Vouchers and 4 types of Schedule Pack; 2 normal, 1 Jumbo, 1 Mega.
 
 1 Deck, that comes with its own Sleeve if you have CardSleeves installed!
 
