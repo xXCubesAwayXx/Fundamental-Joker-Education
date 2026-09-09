@@ -171,7 +171,6 @@ return {
 				}
 			}
 		},
-    },
 		
 		Joker = {
 -- Nice Kids
@@ -487,9 +486,7 @@ return {
 				},
 			},
 		},
-
-},
-
+	},
 misc = {
 		["quips"] = {
 			["fpe_circle_win_entitle"] = {
