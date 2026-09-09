@@ -790,6 +790,11 @@ SMODS.Joker {
 --  Miss Circle
 SMODS.Joker {
     key = 'miss_circle',
+	    config = {
+        extra = {
+            missCirclexMult = 1
+        }
+    },
     pos = {
         x = 6,
         y = 1
