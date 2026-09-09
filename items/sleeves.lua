@@ -2,13 +2,6 @@ if CardSleeves then
 	local learningsleeve = CardSleeves.Sleeve {
     key = "learning",
     name = "Learning Sleeve",
-    loc_txt = {
-        ['name'] = 'Learning Sleeve',
-        ['text'] = {
-            [1] = 'Start with an {C:dark_edition}Eternal{} {C:class}Student{} Joker',
-            [2] = '{C:attention}+1{} joker slot'
-        }
-    },
     atlas = "CustomSleeves",
     pos = { x = 0, y = 0 },
     unlocked = false,
