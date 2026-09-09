@@ -26,7 +26,7 @@ return {
 		Blind = {
 		},
 		
-		fpe_Class = {
+		["class"] = {
 			c_fpe_the_halls = {
 				name = "The Halls",
 				text = {
