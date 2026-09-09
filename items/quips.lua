@@ -6,8 +6,8 @@ SMODS.JimboQuip({
         center = 'j_fpe_miss_circle',
         particle_colours = {
 		G.C.RED,
-		G.C.BLUE,
-		G.C.SECONDARY_SET[class] },
+		HEX('303752'),
+		HEX('a1b3ce') },
         times = 1,
         pitch = 1,
         sound = 'fpe_quip_win_acceptable'
@@ -21,8 +21,8 @@ SMODS.JimboQuip({
         center = 'j_fpe_miss_circle',
         particle_colours = {
 		G.C.RED,
-		G.C.BLUE,
-		G.C.SECONDARY_SET[class] },
+		HEX('303752'),
+		HEX('a1b3ce') },
         times = 1,
         pitch = 1,
         sound = 'fpe_quip_win_bestgradeallday'
@@ -36,8 +36,8 @@ SMODS.JimboQuip({
         center = 'j_fpe_miss_circle',
         particle_colours = {
 		G.C.RED,
-		G.C.BLUE,
-		G.C.SECONDARY_SET[class] },
+		HEX('303752'),
+		HEX('a1b3ce') },
         times = 1,
         pitch = 1,
         sound = 'fpe_quip_win_entitle'
@@ -51,8 +51,8 @@ SMODS.JimboQuip({
         center = 'j_fpe_miss_circle',
         particle_colours = {
 		G.C.RED,
-		G.C.BLUE,
-		G.C.SECONDARY_SET[class] },
+		HEX('303752'),
+		HEX('a1b3ce') },
         times = 1,
         pitch = 1,
         sound = 'fpe_quip_win_gradea'
@@ -66,8 +66,8 @@ SMODS.JimboQuip({
         center = 'j_fpe_miss_circle',
         particle_colours = {
 		G.C.RED,
-		G.C.BLUE,
-		G.C.SECONDARY_SET[class] },
+		HEX('303752'),
+		HEX('a1b3ce') },
         times = 1,
         pitch = 1,
         sound = 'fpe_quip_win_jimboquote'
@@ -81,8 +81,8 @@ SMODS.JimboQuip({
         center = 'j_fpe_miss_circle',
         particle_colours = {
 		G.C.RED,
-		G.C.BLUE,
-		G.C.SECONDARY_SET[class] },
+		HEX('303752'),
+		HEX('a1b3ce') },
         times = 1,
         pitch = 1,
         sound = 'fpe_quip_win_morelikeit'
@@ -96,8 +96,8 @@ SMODS.JimboQuip({
         center = 'j_fpe_miss_circle',
         particle_colours = {
 		G.C.RED,
-		G.C.BLUE,
-		G.C.SECONDARY_SET[class] },
+		HEX('303752'),
+		HEX('a1b3ce') },
         times = 1,
         pitch = 1,
         sound = 'fpe_quip_win_performanceinyears'
@@ -111,8 +111,8 @@ SMODS.JimboQuip({
         center = 'j_fpe_miss_circle',
         particle_colours = {
 		G.C.RED,
-		G.C.BLUE,
-		G.C.SECONDARY_SET[class] },
+		HEX('303752'),
+		HEX('a1b3ce') },
         times = 1,
         pitch = 1,
         sound = 'fpe_quip_win_seemeafterclass'
@@ -127,8 +127,8 @@ SMODS.JimboQuip({
         center = 'j_fpe_miss_circle',
         particle_colours = {
 		G.C.RED,
-		G.C.BLUE,
-		G.C.SECONDARY_SET[class] },
+		HEX('303752'),
+		HEX('a1b3ce') },
         times = 1,
         pitch = 1,
         sound = 'fpe_quip_lose_abbie'
@@ -142,8 +142,8 @@ SMODS.JimboQuip({
         center = 'j_fpe_miss_circle',
         particle_colours = {
 		G.C.RED,
-		G.C.BLUE,
-		G.C.SECONDARY_SET[class] },
+		HEX('303752'),
+		HEX('a1b3ce') },
         times = 1,
         pitch = 1,
         sound = 'fpe_quip_lose_bluffing'
@@ -157,8 +157,8 @@ SMODS.JimboQuip({
         center = 'j_fpe_miss_circle',
         particle_colours = {
 		G.C.RED,
-		G.C.BLUE,
-		G.C.SECONDARY_SET[class] },
+		HEX('303752'),
+		HEX('a1b3ce') },
         times = 1,
         pitch = 1,
         sound = 'fpe_quip_lose_failedme'
@@ -172,8 +172,8 @@ SMODS.JimboQuip({
         center = 'j_fpe_miss_circle',
         particle_colours = {
 		G.C.RED,
-		G.C.BLUE,
-		G.C.SECONDARY_SET[class] },
+		HEX('303752'),
+		HEX('a1b3ce') },
         times = 1,
         pitch = 1,
         sound = 'fpe_quip_lose_gradef'
@@ -187,8 +187,8 @@ SMODS.JimboQuip({
         center = 'j_fpe_miss_circle',
         particle_colours = {
 		G.C.RED,
-		G.C.BLUE,
-		G.C.SECONDARY_SET[class] },
+		HEX('303752'),
+		HEX('a1b3ce') },
         times = 1,
         pitch = 1,
         sound = 'fpe_quip_lose_housewinsagain'
@@ -202,8 +202,8 @@ SMODS.JimboQuip({
         center = 'j_fpe_miss_circle',
         particle_colours = {
 		G.C.RED,
-		G.C.BLUE,
-		G.C.SECONDARY_SET[class] },
+		HEX('303752'),
+		HEX('a1b3ce') },
         times = 1,
         pitch = 1,
         sound = 'fpe_quip_lose_oreos'
@@ -217,8 +217,8 @@ SMODS.JimboQuip({
         center = 'j_fpe_miss_circle',
         particle_colours = {
 		G.C.RED,
-		G.C.BLUE,
-		G.C.SECONDARY_SET[class] },
+		HEX('303752'),
+		HEX('a1b3ce') },
         times = 1,
         pitch = 1,
         sound = 'fpe_quip_lose_thisinstant'
@@ -232,8 +232,8 @@ SMODS.JimboQuip({
         center = 'j_fpe_miss_circle',
         particle_colours = {
 		G.C.RED,
-		G.C.BLUE,
-		G.C.SECONDARY_SET[class] },
+		HEX('303752'),
+		HEX('a1b3ce') },
         times = 1,
         pitch = 1,
         sound = 'fpe_quip_lose_vendingmachine'

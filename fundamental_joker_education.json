@@ -7,12 +7,14 @@
   ],
   "description": "Fundamental Paper Education, now a Balatro mod! FPE was created by the awesome Kaaatie/A3DGhost.",
   "prefix": "fpe",
-  "main_file": "main.lua",
-  "version": "0.2.2",
+  "main_file": "fundamental_joker_education.lua",
+  "version": "0.3.0",
   "priority": 0,
   "badge_colour": "303752",
   "badge_text_colour": "C3D4F1",
-  "dependencies": [],
+  "dependencies": [
+	"Steamodded (>=1.0.0~BETA-1501a)"
+],
   "conflicts": [],
   "provides": []
 }

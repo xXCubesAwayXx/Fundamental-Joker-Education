@@ -174,7 +174,7 @@ Here they all are in order:
 
 <img width="1080" height="720" alt="Decks and Boosters" src="https://github.com/user-attachments/assets/41f67911-85aa-4430-a9e7-f42a7e0f26ce" />
 
-**Learning Is Fun Deck**: Shortened to Learning Deck in game, this Deck, inspired by the Yoyle Deck from [GhostSalt's BFDI mod (which actually got me into balatro modding!)](https://github.com/GhostSalt/BFDI), will up your joker slots by 1 and spawn an Eternal copy of any of the Student jokers! (Those would be any that can be spawned by The Halls.)
+**Learning Is Fun Deck**: This Deck, inspired by the Yoyle Deck from [GhostSalt's BFDI mod (which actually got me into balatro modding!)](https://github.com/GhostSalt/BFDI), will up your joker slots by 1 and spawn an Eternal copy of any of the Student jokers! (Those would be any that can be spawned by The Halls.)
 
 **Learning Is Fun Sleeve**: Got [CardSleeves](https://github.com/larswijn/CardSleeves)? Bring one of your little immortal* paper friends to any deck you want! Feel free to help me come up with an idea for what would happen if the sleeve and deck are stacked.\
 <sup>*Some of the original characters from the original media this mod is based on have been seen dying. It's a sad state of affairs at Paper School, so I'd imagine they'd be pretty happy to never be able to die here. Unless you have [Cryptid](https://github.com/SpectralPack/Cryptid), in which case they may still be in danger from the stuff that can destroy Eternals.</sup>

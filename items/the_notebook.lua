@@ -11,12 +11,6 @@ SMODS.Consumable {
             edit_count0 = 2
         }
     },
-    loc_txt = {
-        ['name'] = 'The Notebook',
-        ['text'] = {
-            [1] = 'Enhances {C:attention}1 selected card{} into a {C:enhanced}Paper Card{}'
-        }
-    },
     cost = 3,
     unlocked = true,
     discovered = false,

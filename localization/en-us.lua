@@ -166,10 +166,11 @@ return {
 			m_fpe_paper = {
 				name = "Paper",
 				text = {
-            "{C:white,X:chips}X#1#{} Chips",
-            "{C:green}#2# in #3#{} chance to {C:red}destroy{} self after scoring"
+          				 "{C:white,X:chips}X#1#{} Chips",
+         				 "{C:green}#2# in #3#{} chance to {C:red}destroy{} self after scoring"
+				}
 			}
-		}
+		},
     },
 		
 		Joker = {
@@ -475,7 +476,6 @@ return {
 			},
 			fpe_a_seal = {
 				name = 'A+ Seal',
-				label = 'A+ Seal',
 				text= {
 					'{C:planet}Levels up{} played hand when {C:attention}scored{}'
 				}
@@ -565,6 +565,9 @@ misc = {
 			["k_booster_group_p_fpe_schedule_pack_jumbo"] = "Schedule Pack",
 			["k_class"] = "Class",
 			["b_class_rate"] = "Class Rate",
+			["k_murdered"] = "Murdered!",
+			["k_circle_scale"] = "You owe me an Oreo...",
+			["k_compass_scale"] = "... want a kitkat?",
 		},
 		["labels"] = {
 			["fpe_a_seal_seal"] = "A+ Seal",

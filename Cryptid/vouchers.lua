@@ -44,7 +44,7 @@ local class_acclimator = { -- Class Merchant T3; Classes are free, spawn rate co
 -- Class Acclimator slider
 
 if Cryptid.setup_voucher_rate_adjuster then
-Cryptid.setup_voucher_rate_adjuster("v_fpe_class_acclimator", "b_class_rate", "class", G.C.CLASS)
+Cryptid.setup_voucher_rate_adjuster("v_fpe_class_acclimator", "b_class_rate", "class", HEX('a1b3ce'))
 end
 
 
