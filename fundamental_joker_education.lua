@@ -88,6 +88,14 @@ SMODS.Atlas({
 })
 
 SMODS.Atlas({
+    key = "CustomAchievements",
+    path = "CustomAchievements.png",
+    px = 64,
+    py = 64,
+    atlas_table = "ASSET_ATLAS"
+})
+
+SMODS.Atlas({
     key = "CryptidVouchers",
     path = "CryptidVouchers.png",
     px = 71,
@@ -111,4 +119,18 @@ assert(SMODS.load_file("items/sleeves.lua"))()
 assert(SMODS.load_file("items/boosters.lua"))()
 assert(SMODS.load_file("items/tags.lua"))()
 assert(SMODS.load_file("items/quips.lua"))()
+assert(SMODS.load_file("items/achievements.lua"))()
 assert(SMODS.load_file("cryptid/vouchers.lua"))()
+
+local ref = Game.main_menu
+function Game:main_menu(change_context)
+  for k, v in pairs(G.P_CENTERS) do
+    if v.config and v.config.extra and type(v.config.extra) == "table" and v.config.extra.is_student then
+      v.set_badges = function(self, card, badges)
+        badges[#badges + 1] = create_badge(localize('student_joker_badge'), HEX('a1b3ce'),
+          G.C.WHITE, 1)
+      end
+    end
+  end
+  ref(self, change_context)
+end

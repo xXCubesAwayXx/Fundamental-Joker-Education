@@ -1,7 +1,7 @@
 if CardSleeves then
 	local learningsleeve = CardSleeves.Sleeve {
     key = "learning",
-    name = "Learning Sleeve",
+    name = "Learning Is Fun Sleeve",
     atlas = "CustomSleeves",
     pos = { x = 0, y = 0 },
     unlocked = false,

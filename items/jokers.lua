@@ -9,6 +9,7 @@ SMODS.Joker {
         extra = {
             dollars = 1.5,
             max = 10,
+	    is_student = true
         }
     },
     pos = {
@@ -23,6 +24,9 @@ SMODS.Joker {
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
+    add_to_deck = function(self, card, from_debuff)
+	ach_perfect_attendance_unlock()
+    end,
     loc_vars = function(self, info_queue, card)
         return {
             vars = {
@@ -59,6 +63,7 @@ SMODS.Joker {
     config = {
         extra = {
             create_consumable_count0 = 1,
+	    is_student = true
         }
     },
     pos = {
@@ -73,6 +78,9 @@ SMODS.Joker {
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
+    add_to_deck = function(self, card, from_debuff)
+	ach_perfect_attendance_unlock()
+    end,
     loc_vars = function(self, info_queue, card)
         return {
             vars = {
@@ -100,6 +108,11 @@ SMODS.Joker {
 --  Bubble
 SMODS.Joker {
     key = 'bubble',
+    config = {
+        extra = {
+	    is_student = true
+        }
+    },
     pos = {
         x = 2,
         y = 0
@@ -112,6 +125,9 @@ SMODS.Joker {
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
+    add_to_deck = function(self, card, from_debuff)
+	ach_perfect_attendance_unlock()
+    end,
     calculate = function(self, card, context)
         if context.end_of_round and context.main_eval and G.GAME.blind.boss then
             do
@@ -133,7 +149,10 @@ SMODS.Joker {
 SMODS.Joker {
     key = 'lana',
     config = {
-        extra = { create_consumable_count0 = 1 }
+        extra = { 
+		create_consumable_count0 = 1, 
+		is_student = true 
+		}
     },
     pos = {
         x = 4,
@@ -147,6 +166,9 @@ SMODS.Joker {
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
+    add_to_deck = function(self, card, from_debuff)
+	ach_perfect_attendance_unlock()
+    end,
     loc_vars = function(self, info_queue, card)
         return {
             vars = {
@@ -172,7 +194,8 @@ SMODS.Joker {
     key = 'abbie',
     config = {
         extra = {
-            abbieChips = 0
+            abbieChips = 0,
+	    is_student = true
         }
     },
     pos = {
@@ -187,6 +210,9 @@ SMODS.Joker {
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
+    add_to_deck = function(self, card, from_debuff)
+	ach_perfect_attendance_unlock()
+    end,
     loc_vars = function(self, info_queue, card)
         return {
             vars = {
@@ -225,7 +251,7 @@ SMODS.Joker {
 SMODS.Joker {
     key = 'petunia',
     config = {
-        extra = { petuniaChips = 0 }
+        extra = { petuniaChips = 0, is_student = true }
     },
     pos = {
         x = 5,
@@ -239,6 +265,9 @@ SMODS.Joker {
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
+    add_to_deck = function(self, card, from_debuff)
+	ach_perfect_attendance_unlock()
+    end,
     loc_vars = function(self, info_queue, card)
         return {
             vars = {
@@ -274,7 +303,8 @@ SMODS.Joker {
     config = {
         extra = {
             numerator_0 = 1,
-            odds_0 = 8
+            odds_0 = 8,
+	    is_student = true
         }
     },
     pos = {
@@ -289,7 +319,9 @@ SMODS.Joker {
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
-
+    add_to_deck = function(self, card, from_debuff)
+	ach_perfect_attendance_unlock()
+    end,
     loc_vars = function(self, info_queue, card)
         local new_numerator0, new_denominator0 = SMODS.get_probability_vars(card, self.config.extra.numerator_0, self.config.extra.odds_0, 'j_fpe_lizzy')
         return {
@@ -327,6 +359,11 @@ SMODS.Joker {
 --  Kevin
 SMODS.Joker {
     key = 'kevin',
+    config = {
+        extra = {
+	    is_student = true
+        }
+    },
     pos = {
         x = 7,
         y = 0
@@ -339,7 +376,9 @@ SMODS.Joker {
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
-
+    add_to_deck = function(self, card, from_debuff)
+	ach_perfect_attendance_unlock()
+    end,
 
     calculate = function(self, card, context)
         if context.ending_shop then
@@ -360,7 +399,8 @@ SMODS.Joker {
     config = {
         extra = {
             var_cubbiePacks0 = 5,
-            cubbiePacks = 0
+            cubbiePacks = 0,
+	    is_student = true
         }
     },
     pos = {
@@ -375,7 +415,9 @@ SMODS.Joker {
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
-
+    add_to_deck = function(self, card, from_debuff)
+	ach_perfect_attendance_unlock()
+    end,
     loc_vars = function(self, info_queue, card)
         return {
             vars = {
@@ -411,7 +453,7 @@ SMODS.Joker {
 SMODS.Joker {
     key = 'robby',
     config = {
-        extra = { consumable_count_value = 2 }
+        extra = { consumable_count_value = 2, is_student = true }
     },
     pos = {
         x = 9,
@@ -425,6 +467,9 @@ SMODS.Joker {
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
+    add_to_deck = function(self, card, from_debuff)
+	ach_perfect_attendance_unlock()
+    end,
     loc_vars = function(self, info_queue, card)
         return {
             vars = {
@@ -468,7 +513,8 @@ SMODS.Joker {
         extra = {
             numerator_0 = 1,
             odds_0 = 8,
-            rileyChips = 0
+            rileyChips = 0,
+	    is_student = true
         }
     },
     pos = {
@@ -483,8 +529,9 @@ SMODS.Joker {
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
-
-
+    add_to_deck = function(self, card, from_debuff)
+	ach_perfect_attendance_unlock()
+    end,
 
     loc_vars = function(self, info_queue, card)
         local new_numerator0, new_denominator0 = SMODS.get_probability_vars(card, self.config.extra.numerator_0, self.config.extra.odds_0, 'j_fpe_riley')
@@ -533,6 +580,11 @@ SMODS.Joker {
 -- Ruby
 SMODS.Joker {
     key = 'ruby',
+    config = {
+        extra = {
+	    is_student = true
+        }
+    },
     pos = {
         x = 2,
         y = 1
@@ -545,6 +597,9 @@ SMODS.Joker {
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
+    add_to_deck = function(self, card, from_debuff)
+	ach_perfect_attendance_unlock()
+    end,
     add_to_deck = function(self, card, from_debuff)
         SMODS.change_voucher_limit(1)
     end,
@@ -559,6 +614,7 @@ SMODS.Joker {
     config = {
         extra = {
             Xmult = 1.5,
+	    is_student = true
         }
     },
     pos = {
@@ -573,6 +629,9 @@ SMODS.Joker {
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
+    add_to_deck = function(self, card, from_debuff)
+	ach_perfect_attendance_unlock()
+    end,
     loc_vars = function(self, info_queue, card)
         return {
             vars = {
@@ -596,7 +655,7 @@ SMODS.Joker {
 SMODS.Joker {
     key = 'oliver',
     config = {
-        extra = { oliverMult = 0 }
+        extra = { oliverMult = 0, is_student = true }
     },
     pos = {
         x = 5,
@@ -610,7 +669,9 @@ SMODS.Joker {
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
-
+    add_to_deck = function(self, card, from_debuff)
+	ach_perfect_attendance_unlock()
+    end,
     loc_vars = function(self, info_queue, card)
         return {
             vars = {
@@ -636,6 +697,11 @@ end
 --  Zip
 SMODS.Joker {
     key = 'zip',
+    config = {
+        extra = {
+	    is_student = true
+        }
+    },
     pos = {
         x = 4,
         y = 1
@@ -649,6 +715,7 @@ SMODS.Joker {
     discovered = true,
     atlas = 'CustomJokers',
     add_to_deck = function(self, card, from_debuff)
+	ach_perfect_attendance_unlock()
         G.GAME.modifiers.booster_size_mod = (G.GAME.modifiers.booster_size_mod or 0) + 1
     end,
     remove_from_deck = function(self, card, from_debuff)
@@ -679,6 +746,11 @@ end
 
 SMODS.Joker {
     key = 'chip',
+    config = {
+        extra = {
+	    is_student = true
+        }
+    },
     pos = {
         x = 6,
         y = 2
@@ -692,11 +764,15 @@ SMODS.Joker {
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
+    add_to_deck = function(self, card, from_debuff)
+	ach_perfect_attendance_unlock()
+    end,
 }
 
 --  Edward
 SMODS.Joker {
     key = 'edward',
+
     pos = {
         x = 3,
         y = 1
@@ -709,6 +785,9 @@ SMODS.Joker {
     unlocked = true,
     discovered = true,
     atlas = 'CustomJokers',
+    add_to_deck = function(self, card, from_debuff)
+	ach_perfect_attendance_unlock()
+    end,
     calculate = function(self, card, context)
         if context.repetition and context.cardarea == G.play  then
             if (function()

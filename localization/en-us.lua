@@ -565,9 +565,18 @@ misc = {
 			["k_murdered"] = "Murdered!",
 			["k_circle_scale"] = "You owe me an Oreo...",
 			["k_compass_scale"] = "... want a kitkat?",
+			["student_joker_badge"] = "Student of Paper School",
 		},
 		["labels"] = {
 			["fpe_a_seal_seal"] = "A+ Seal",
+		},
+		achievement_names = {
+			ach_fpe_perfect_attendance = "Perfect Attendance",
+			ach_jpll = "Jimbo's Precious Little Life"
+		},
+		achievement_descriptions = {
+			ach_fpe_perfect_attendance = "Assemble the whole class. (Own all 17 Student jokers at once)",
+			ach_jpll = "Prolong your precious little life by any means necessary. (Survive 150 rounds)"
 		},
 }
 
