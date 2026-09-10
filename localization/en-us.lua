@@ -123,7 +123,7 @@ return {
 			c_fpe_administration = {
 				name = "Administration",
 				text = {
-					'Creates a random {C:class}Student{} {C:attention}Joker{}',
+					'Creates {C:attention}2{} random {C:class}Class{} Cards',
 					'{C:inactive}(Must have room){}'
 				}
 			},
