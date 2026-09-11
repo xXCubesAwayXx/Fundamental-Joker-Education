@@ -12,7 +12,7 @@ SMODS.Consumable {
     discovered = false,
     hidden = true,
     soul_set = 'fpe_class',
-    soul_rate = 0.003,
+    soul_rate = 0.03,
     can_repeat_soul = true,
     atlas = 'CustomConsumables',
     use = function(self, card, area, copier)
@@ -25,12 +25,14 @@ SMODS.Consumable {
             func = function()
             local joker_card = SMODS.add_card({ set = 'Joker', key = 'j_fpe__lice' })
                         G.GAME.joker_buffer = math.max(0, (G.GAME.joker_buffer or 1) - 1)
+						check_for_unlock { type = 'fpe_spawn_alice' }
+						check_for_unlock { type = 'ach_alice' }
             return true
             end
             }))
             end
             return {
-                message = created_joker and localize('k_plus_joker'),
+                message = created_joker and localize('k_spawn_alice'),
                 colour = G.C.GREEN
             }
         end
@@ -61,7 +63,7 @@ SMODS.Consumable {
     discovered = false,
     hidden = true,
     soul_set = 'fpe_class',
-    soul_rate = 0.003,
+    soul_rate = 0.03,
     can_repeat_soul = true,
     atlas = 'CustomConsumables',
     use = function(self, card, area, copier)
@@ -73,6 +75,8 @@ SMODS.Consumable {
             func = function()
             local joker_card = SMODS.add_card({ set = 'fpe_teachers' })
                         G.GAME.joker_buffer = math.max(0, (G.GAME.joker_buffer or 1) - 1)
+			check_for_unlock { type = 'fpe_spawn_teacher' }
+			check_for_unlock { type = 'ach_spawn_teacher' }
             return true
             end
             }))

@@ -1,3 +1,35 @@
+-- Silver Achievements
+-- WHAT HAVE YOU DONE?!?
+SMODS.Achievement({
+	key = "alice",
+	pos = {x = 1, y = 0},
+	hidden_pos = { x = 1, y = 1 },
+	bypass_all_unlocked = true,
+	atlas = "CustomAchievements",
+	--reset_on_startup = false,
+	unlock_condition = function(self, args)
+	      if args.type == 'ach_alice' then	
+			return true
+		end
+	end,
+})
+
+-- Tutoring Session
+SMODS.Achievement({
+	key = "spawn_teacher",
+	pos = {x = 1, y = 0},
+	hidden_pos = { x = 1, y = 1 },
+	bypass_all_unlocked = true,
+	atlas = "CustomAchievements",
+	--reset_on_startup = false,
+	unlock_condition = function(self, args)
+	      if args.type == 'ach_spawn_teacher' then	
+			return true
+		end
+	end,
+})
+
+-- Golden Achievements
 -- Perfect Attendance 
  local fpe_students = {
         ['j_fpe_abbie'] = true,
@@ -21,13 +53,13 @@
 	
 function ach_perfect_attendance_unlock()
 local full_attendant = true
-for S,B in ipairs(fpe_students) do
-  if not next(find_joker(S)) then
+for S,B in pairs(fpe_students) do
+  if not next(SMODS.find_card(S)) then
     full_attendant = false
     break
 end
 if full_attendant then
- check_for_unlock({ type = "ach_perfect_attendace" })
+ check_for_unlock({ type = "ach_perfect_attendance" })
 end
 end
 end
@@ -47,10 +79,6 @@ SMODS.Achievement({
 })
 
 -- Jimbo's Precious Little Life
-if G.GAME.round == 150 then
-  check_for_unlock({ type = "ach_jpll"})
-  end
-
 SMODS.Achievement({
 	key = "jpll",
 	pos = {x = 2, y = 0},
@@ -59,8 +87,8 @@ SMODS.Achievement({
 	atlas = "CustomAchievements",
 	--reset_on_startup = false,
 	unlock_condition = function(self, args)
-	      if args.type == "ach_jpll" then	
-			return true
+		if G.GAME.round >= 150 then
+		return true
 		end
 	end,
 })

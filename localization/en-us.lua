@@ -14,7 +14,7 @@ return {
 		},	
 		
 		Sleeve = {
-			sleeve_fpe_learning_sleeve = {
+			sleeve_fpe_learning = {
 				name = "Learning Is Fun Sleeve",
 				text = {
 					'Start with an {C:dark_edition}Eternal{} {C:class}Student{} Joker',
@@ -566,17 +566,57 @@ misc = {
 			["k_circle_scale"] = "You owe me an Oreo...",
 			["k_compass_scale"] = "... want a kitkat?",
 			["student_joker_badge"] = "Student of Paper School",
+			["teacher_joker_badge"] = "Faculty/Staff of Paper School",
+			["k_spawn_alice"] = "WHAT HAVE YOU DONE!?",
 		},
 		["labels"] = {
 			["fpe_a_seal_seal"] = "A+ Seal",
 		},
 		achievement_names = {
+		-- Bronze
+			ach_fpe_first_student = "Welcome to Paper School!",
+			ach_fpe_first_class_card = "Registration",
+			ach_fpe_paper_destroyed = "No, My Homework!",
+			ach_fpe_top_marks = "Top Marks",
+		-- Silver
+			ach_fpe_all_friends = "Learning's More Fun With Everyone",
+			ach_fpe_alice = "WHAT HAVE YOU DONE!?!?",
+			ach_fpe_spawn_teacher = "Tutoring Session",
+			ach_fpe_schedule_overload = "Schedule Overload",
+		-- Gold
 			ach_fpe_perfect_attendance = "Perfect Attendance",
-			ach_jpll = "Jimbo's Precious Little Life"
+			ach_fpe_jpll = "Jimbo's Precious Little Life",
+			ach_fpe_golden_graduates = "Golden Graduates",
+			ach_fpe_dedicated_scholar = "Dedicated Scholar",
+		-- Diamond
+			ach_fpe_staff_meeting = "Special Staff Meeting",
+			ach_fpe_ultimate_assembly = "The Ultimate Assembly!",
+			ach_fpe_best_teachers_ever = "BEST. TEAHCERS. EVER!",
+		-- Ultimate
+			ach_fpe_kaaaties_list = "Kaaatie's List",
 		},
 		achievement_descriptions = {
-			ach_fpe_perfect_attendance = "Assemble the whole class. (Own all 17 Student jokers at once)",
-			ach_jpll = "Prolong your precious little life by any means necessary. (Survive 150 rounds)"
+		-- Bronze
+			ach_fpe_first_student = {"Make a new friend at school.", "(Discover a Student Joker)"},
+			ach_fpe_first_class_card = {"Register your first class.","(Use a {C:class}Class Card{} for the first time)"},
+			ach_fpe_paper_destroyed = {"Lose your homework on the first day of class.","(Trigger the Paper enhancement's destroy effect)"},
+			ach_fpe_top_marks = {"Let your high grades boost your confidence. You earned it, prodigy.","(Use your first A+ Seal)"},
+		-- Silver
+			ach_fpe_all_friends = {"Meet and get friendly with all your peers.", "(Discover every Student joker)"},
+			ach_fpe_alice = {"Pay a visit to the Princess.","(Use {C:spectral}???{} and unlock ALICE)"},
+			ach_fpe_spawn_teacher = {"Get some help from a \"trusted\" adult.","(Use {C:spectral}Teacher's Lounge{} and unlock a Teacher Joker)"},
+			ach_fpe_schedule_overload = {"Overload your schedule.","(Discover every Class Card.)"},
+		-- Gold
+			ach_fpe_perfect_attendance = {"Assemble the whole class.", "(Own all 17 Student jokers at once)"},
+			ach_fpe_jpll = {"Prolong your precious little life by any means necessary.", "(Survive 150 rounds)"},
+			ach_fpe_golden_graduates = {"Achieve highest honors with every member of your class.", "(Obtain {C:gold}Gold Stickers{} on every Student Joker)"},
+			ach_fpe_dedicated_scholar = {"Take 100 classes here.", "(Use 100 {C:class}Class cards{})"},
+		-- Diamond
+			ach_fpe_staff_meeting = {"Catch the attention of the whole staff.", "(Own all 8 Teacher jokers at once)"},
+			ach_fpe_ultimate_assembly = {"Get together with all your paper pals, young and old, mortal and supernatural.", "(Own every base-mod Joker at once)"},
+			ach_fpe_best_teachers_ever = {"Bring your teachers up to be the best, most golden educators they can be.","(Obtain {C:gold}Gold Stickers{} on every Teacher Joker)"},
+		-- Ultimate
+			ach_fpe_kaaaties_list = {"Be the shining star that makes Paper School the best school ever.","(Obtain {C:gold}Gold Stickers{} on every base-mod Joker"},
 		},
 }
 

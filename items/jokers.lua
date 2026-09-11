@@ -22,10 +22,15 @@ SMODS.Joker {
     eternal_compat = true,
     perishable_compat = true,
     unlocked = true,
-    discovered = true,
     atlas = 'CustomJokers',
     add_to_deck = function(self, card, from_debuff)
-	ach_perfect_attendance_unlock()
+		G.E_MANAGER:add_event(Event({
+			func = function()
+	
+				ach_perfect_attendance_unlock()
+				      return true
+            	end
+    }))
     end,
     loc_vars = function(self, info_queue, card)
         return {
@@ -76,10 +81,15 @@ SMODS.Joker {
     eternal_compat = true,
     perishable_compat = true,
     unlocked = true,
-    discovered = true,
     atlas = 'CustomJokers',
     add_to_deck = function(self, card, from_debuff)
-	ach_perfect_attendance_unlock()
+		G.E_MANAGER:add_event(Event({
+			func = function()
+	
+				ach_perfect_attendance_unlock()
+				      return true
+            	end
+    }))
     end,
     loc_vars = function(self, info_queue, card)
         return {
@@ -123,10 +133,15 @@ SMODS.Joker {
     eternal_compat = true,
     perishable_compat = true,
     unlocked = true,
-    discovered = true,
     atlas = 'CustomJokers',
     add_to_deck = function(self, card, from_debuff)
-	ach_perfect_attendance_unlock()
+		G.E_MANAGER:add_event(Event({
+			func = function()
+
+				ach_perfect_attendance_unlock()
+				      return true
+            	end
+    }))
     end,
     calculate = function(self, card, context)
         if context.end_of_round and context.main_eval and G.GAME.blind.boss then
@@ -164,10 +179,15 @@ SMODS.Joker {
     eternal_compat = true,
     perishable_compat = true,
     unlocked = true,
-    discovered = true,
     atlas = 'CustomJokers',
     add_to_deck = function(self, card, from_debuff)
-	ach_perfect_attendance_unlock()
+		G.E_MANAGER:add_event(Event({
+			func = function()
+	
+				ach_perfect_attendance_unlock()
+				      return true
+            	end
+    }))
     end,
     loc_vars = function(self, info_queue, card)
         return {
@@ -208,10 +228,15 @@ SMODS.Joker {
     eternal_compat = true,
     perishable_compat = true,
     unlocked = true,
-    discovered = true,
     atlas = 'CustomJokers',
     add_to_deck = function(self, card, from_debuff)
-	ach_perfect_attendance_unlock()
+		G.E_MANAGER:add_event(Event({
+			func = function()
+	
+				ach_perfect_attendance_unlock()
+				      return true
+            	end
+    }))
     end,
     loc_vars = function(self, info_queue, card)
         return {
@@ -263,10 +288,15 @@ SMODS.Joker {
     eternal_compat = true,
     perishable_compat = true,
     unlocked = true,
-    discovered = true,
     atlas = 'CustomJokers',
     add_to_deck = function(self, card, from_debuff)
-	ach_perfect_attendance_unlock()
+		G.E_MANAGER:add_event(Event({
+			func = function()
+	
+				ach_perfect_attendance_unlock()
+				      return true
+            	end
+    }))
     end,
     loc_vars = function(self, info_queue, card)
         return {
@@ -317,10 +347,15 @@ SMODS.Joker {
     eternal_compat = true,
     perishable_compat = true,
     unlocked = true,
-    discovered = true,
     atlas = 'CustomJokers',
     add_to_deck = function(self, card, from_debuff)
-	ach_perfect_attendance_unlock()
+		G.E_MANAGER:add_event(Event({
+			func = function()
+	
+				ach_perfect_attendance_unlock()
+				      return true
+            	end
+    }))
     end,
     loc_vars = function(self, info_queue, card)
         local new_numerator0, new_denominator0 = SMODS.get_probability_vars(card, self.config.extra.numerator_0, self.config.extra.odds_0, 'j_fpe_lizzy')
@@ -374,10 +409,15 @@ SMODS.Joker {
     eternal_compat = true,
     perishable_compat = true,
     unlocked = true,
-    discovered = true,
     atlas = 'CustomJokers',
     add_to_deck = function(self, card, from_debuff)
-	ach_perfect_attendance_unlock()
+		G.E_MANAGER:add_event(Event({
+			func = function()
+	
+				ach_perfect_attendance_unlock()
+				      return true
+            	end
+    }))
     end,
 
     calculate = function(self, card, context)
@@ -413,10 +453,15 @@ SMODS.Joker {
     eternal_compat = true,
     perishable_compat = true,
     unlocked = true,
-    discovered = true,
     atlas = 'CustomJokers',
     add_to_deck = function(self, card, from_debuff)
-	ach_perfect_attendance_unlock()
+		G.E_MANAGER:add_event(Event({
+			func = function()
+	
+				ach_perfect_attendance_unlock()
+				      return true
+            	end
+    }))
     end,
     loc_vars = function(self, info_queue, card)
         return {
@@ -465,10 +510,15 @@ SMODS.Joker {
     eternal_compat = true,
     perishable_compat = true,
     unlocked = true,
-    discovered = true,
     atlas = 'CustomJokers',
     add_to_deck = function(self, card, from_debuff)
-	ach_perfect_attendance_unlock()
+		G.E_MANAGER:add_event(Event({
+			func = function()
+	
+				ach_perfect_attendance_unlock()
+				      return true
+            	end
+    }))
     end,
     loc_vars = function(self, info_queue, card)
         return {
@@ -476,7 +526,7 @@ SMODS.Joker {
                 card.ability.extra.consumable_count_value
             }
         }
-    end,
+	end,
     calculate = function(self, card, context)
         if context.end_of_round and context.main_eval and G.GAME.blind.boss then
             if #G.consumeables.cards >= card.ability.extra.consumable_count_value then
@@ -527,10 +577,15 @@ SMODS.Joker {
     eternal_compat = true,
     perishable_compat = true,
     unlocked = true,
-    discovered = true,
     atlas = 'CustomJokers',
     add_to_deck = function(self, card, from_debuff)
-	ach_perfect_attendance_unlock()
+		G.E_MANAGER:add_event(Event({
+			func = function()
+	
+				ach_perfect_attendance_unlock()
+				      return true
+            	end
+    }))
     end,
 
     loc_vars = function(self, info_queue, card)
@@ -598,9 +653,12 @@ SMODS.Joker {
     discovered = true,
     atlas = 'CustomJokers',
     add_to_deck = function(self, card, from_debuff)
-	ach_perfect_attendance_unlock()
-    end,
-    add_to_deck = function(self, card, from_debuff)
+			G.E_MANAGER:add_event(Event({
+			func = function()
+				ach_perfect_attendance_unlock()
+				      return true
+            	end
+    }))
         SMODS.change_voucher_limit(1)
     end,
     remove_from_deck = function(self, card, from_debuff)
@@ -627,10 +685,15 @@ SMODS.Joker {
     eternal_compat = true,
     perishable_compat = true,
     unlocked = true,
-    discovered = true,
     atlas = 'CustomJokers',
     add_to_deck = function(self, card, from_debuff)
-	ach_perfect_attendance_unlock()
+		G.E_MANAGER:add_event(Event({
+			func = function()
+	
+				ach_perfect_attendance_unlock()
+				      return true
+            	end
+    }))
     end,
     loc_vars = function(self, info_queue, card)
         return {
@@ -667,10 +730,15 @@ SMODS.Joker {
     eternal_compat = true,
     perishable_compat = true,
     unlocked = true,
-    discovered = true,
     atlas = 'CustomJokers',
     add_to_deck = function(self, card, from_debuff)
-	ach_perfect_attendance_unlock()
+		G.E_MANAGER:add_event(Event({
+			func = function()
+
+				ach_perfect_attendance_unlock()
+				      return true
+            	end
+    }))
     end,
     loc_vars = function(self, info_queue, card)
         return {
@@ -712,11 +780,16 @@ SMODS.Joker {
     eternal_compat = true,
     perishable_compat = true,
     unlocked = true,
-    discovered = true,
     atlas = 'CustomJokers',
     add_to_deck = function(self, card, from_debuff)
-	ach_perfect_attendance_unlock()
-        G.GAME.modifiers.booster_size_mod = (G.GAME.modifiers.booster_size_mod or 0) + 1
+		G.E_MANAGER:add_event(Event({
+			func = function()
+
+				ach_perfect_attendance_unlock()
+				      return true
+            	end
+    }))
+	        G.GAME.modifiers.booster_size_mod = (G.GAME.modifiers.booster_size_mod or 0) + 1
     end,
     remove_from_deck = function(self, card, from_debuff)
         G.GAME.modifiers.booster_size_mod = (G.GAME.modifiers.booster_size_mod or 0) - 1
@@ -762,11 +835,16 @@ SMODS.Joker {
     eternal_compat = true,
     perishable_compat = true,
     unlocked = true,
-    discovered = true,
     atlas = 'CustomJokers',
     add_to_deck = function(self, card, from_debuff)
-	ach_perfect_attendance_unlock()
-    end,
+		G.E_MANAGER:add_event(Event({
+			func = function()
+
+				ach_perfect_attendance_unlock()
+				      return true
+            	end
+    }))
+	end,
 }
 
 --  Edward
@@ -783,11 +861,16 @@ SMODS.Joker {
     eternal_compat = true,
     perishable_compat = true,
     unlocked = true,
-    discovered = true,
     atlas = 'CustomJokers',
     add_to_deck = function(self, card, from_debuff)
-	ach_perfect_attendance_unlock()
-    end,
+		G.E_MANAGER:add_event(Event({
+			func = function()
+
+				ach_perfect_attendance_unlock()
+				      return true
+            	end
+    }))
+	end,
     calculate = function(self, card, context)
         if context.repetition and context.cardarea == G.play  then
             if (function()
@@ -835,8 +918,7 @@ SMODS.Joker {
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
-    unlocked = true,
-    discovered = true,
+    unlocked = false,
     atlas = 'CustomJokers',
     loc_vars = function(self, info_queue, card)
         return {
@@ -883,8 +965,7 @@ SMODS.Joker {
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
-    unlocked = true,
-    discovered = true,
+	unlocked = false,
     atlas = 'CustomJokers',
     loc_vars = function(self, info_queue, card)
         return {
@@ -934,8 +1015,7 @@ SMODS.Joker {
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
-    unlocked = true,
-    discovered = true,
+	unlocked = false,
     atlas = 'CustomJokers',
     loc_vars = function(self, info_queue, card)
         return {
@@ -965,6 +1045,7 @@ SMODS.Joker {
     cost = 20,
     rarity = 4,
     blueprint_compat = true,
+	unlocked = false,
     atlas = "CustomJokers",
     calculate = function(self, card, context)
         if context.discard and #context.full_hand == 1 then
@@ -1000,8 +1081,7 @@ SMODS.Joker {
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
-    unlocked = true,
-    discovered = true,
+    unlocked = false,
     atlas = 'CustomJokers',
     add_to_deck = function(self, card, from_debuff)
         SMODS.change_play_limit(1)
@@ -1025,8 +1105,7 @@ SMODS.Joker {
     blueprint_compat = false,
     eternal_compat = true,
     perishable_compat = true,
-    unlocked = true,
-    discovered = true,
+    unlocked = false,
     atlas = 'CustomJokers',
     calculate = function(self, card, context)
         if context.end_of_round and context.game_over and context.main_eval and not context.blueprint then
@@ -1060,8 +1139,7 @@ SMODS.Joker {
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
-    unlocked = true,
-    discovered = true,
+    unlocked = false,
     atlas = 'CustomJokers',
     loc_vars = function(self, info_queue, card)
         return {
@@ -1117,8 +1195,7 @@ SMODS.Joker {
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
-    unlocked = true,
-    discovered = true,
+    unlocked = false,
     atlas = 'CustomJokers',
     loc_vars = function(self, info_queue, card)
         return {
@@ -1166,8 +1243,7 @@ SMODS.Joker {
     blueprint_compat = true,
     eternal_compat = true,
     perishable_compat = true,
-    unlocked = true,
-    discovered = true,
+    unlocked = false,
     atlas = 'CustomJokers',
 
     loc_vars = function(self, info_queue, card)
