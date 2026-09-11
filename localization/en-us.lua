@@ -598,25 +598,25 @@ misc = {
 		achievement_descriptions = {
 		-- Bronze
 			ach_fpe_first_student = {"Make a new friend at school.", "(Discover a Student Joker)"},
-			ach_fpe_first_class_card = {"Register your first class.","(Use a {C:class}Class Card{} for the first time)"},
+			ach_fpe_first_class_card = {"Register your first class.","(Use a Class Card for the first time)"},
 			ach_fpe_paper_destroyed = {"Lose your homework on the first day of class.","(Trigger the Paper enhancement's destroy effect)"},
 			ach_fpe_top_marks = {"Let your high grades boost your confidence. You earned it, prodigy.","(Use your first A+ Seal)"},
 		-- Silver
 			ach_fpe_all_friends = {"Meet and get friendly with all your peers.", "(Discover every Student joker)"},
-			ach_fpe_alice = {"Pay a visit to the Princess.","(Use {C:spectral}???{} and unlock ALICE)"},
-			ach_fpe_spawn_teacher = {"Get some help from a \"trusted\" adult.","(Use {C:spectral}Teacher's Lounge{} and unlock a Teacher Joker)"},
+			ach_fpe_alice = {"Pay a visit to the Princess.","(Use ??? and unlock ALICE)"},
+			ach_fpe_spawn_teacher = {"Get some help from a \"trusted\" adult.","(Use Teacher's Lounge and unlock a Teacher Joker)"},
 			ach_fpe_schedule_overload = {"Overload your schedule.","(Discover every Class Card.)"},
 		-- Gold
 			ach_fpe_perfect_attendance = {"Assemble the whole class.", "(Own all 17 Student jokers at once)"},
 			ach_fpe_jpll = {"Prolong your precious little life by any means necessary.", "(Survive 150 rounds)"},
-			ach_fpe_golden_graduates = {"Achieve highest honors with every member of your class.", "(Obtain {C:gold}Gold Stickers{} on every Student Joker)"},
+			ach_fpe_golden_graduates = {"Achieve highest honors with every member of your class.", "(Obtain Gold Stickers on every Student Joker)"},
 			ach_fpe_dedicated_scholar = {"Take 100 classes here.", "(Use 100 {C:class}Class cards{})"},
 		-- Diamond
 			ach_fpe_staff_meeting = {"Catch the attention of the whole staff.", "(Own all 8 Teacher jokers at once)"},
 			ach_fpe_ultimate_assembly = {"Get together with all your paper pals, young and old, mortal and supernatural.", "(Own every base-mod Joker at once)"},
-			ach_fpe_best_teachers_ever = {"Bring your teachers up to be the best, most golden educators they can be.","(Obtain {C:gold}Gold Stickers{} on every Teacher Joker)"},
+			ach_fpe_best_teachers_ever = {"Bring your teachers up to be the best, most golden educators they can be.","(Obtain Gold Stickers on every Teacher Joker)"},
 		-- Ultimate
-			ach_fpe_kaaaties_list = {"Be the shining star that makes Paper School the best school ever.","(Obtain {C:gold}Gold Stickers{} on every base-mod Joker"},
+			ach_fpe_kaaaties_list = {"Be the shining star that makes Paper School the best school ever.","(Obtain Gold Stickers on every base-mod Joker"},
 		},
 }
 

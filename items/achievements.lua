@@ -1,3 +1,34 @@
+-- Bronze Achievments
+-- No, my homework!
+SMODS.Achievement({
+	key = "paper_destroyed",
+	pos = {x = 0, y = 0},
+	hidden_pos = { x = 0, y = 1 },
+	bypass_all_unlocked = true,
+	atlas = "CustomAchievements",
+	--reset_on_startup = false,
+	unlock_condition = function(self, args)
+	      if args.type == 'ach_paper_destroyed' then	
+			return true
+		end
+	end,
+})
+
+-- Top Marks
+SMODS.Achievement({
+	key = "top_marks",
+	pos = {x = 0, y = 0},
+	hidden_pos = { x = 0, y = 1 },
+	bypass_all_unlocked = true,
+	atlas = "CustomAchievements",
+	--reset_on_startup = false,
+	unlock_condition = function(self, args)
+	      if args.type == 'ach_top_marks' then	
+			return true
+		end
+	end,
+})
+
 -- Silver Achievements
 -- WHAT HAVE YOU DONE?!?
 SMODS.Achievement({

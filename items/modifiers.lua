@@ -33,6 +33,7 @@ SMODS.Enhancement {
             return {x_chips = card.ability.extra.Xchips}
         end
         if context.after and context.cardarea == G.play and SMODS.pseudorandom_probability(card, "fpe_paper", 1, card.ability.extra.odds) then
+			check_for_unlock { type = 'ach_paper_destroyed' }
             SMODS.destroy_cards(card)
         end
     end
@@ -60,6 +61,7 @@ SMODS.Seal {
     calculate = function(self, card, context)
         if context.main_scoring and context.cardarea == G.play then
             do
+			check_for_unlock { type = 'ach_top_marks' }
             SMODS.smart_level_up_hand(card, context.scoring_name, false, 1)
             return {
                 message = localize('k_level_up_ex'),
