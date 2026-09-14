@@ -26,7 +26,8 @@ SMODS.Joker {
     add_to_deck = function(self, card, from_debuff)
 		G.E_MANAGER:add_event(Event({
 			func = function()
-	
+				ach_learnings_more_fun()
+				ach_ultimate_assembly_unlock()
 				ach_perfect_attendance_unlock()
 				      return true
             	end
@@ -85,7 +86,8 @@ SMODS.Joker {
     add_to_deck = function(self, card, from_debuff)
 		G.E_MANAGER:add_event(Event({
 			func = function()
-	
+				ach_learnings_more_fun()
+				ach_ultimate_assembly_unlock()
 				ach_perfect_attendance_unlock()
 				      return true
             	end
@@ -137,7 +139,8 @@ SMODS.Joker {
     add_to_deck = function(self, card, from_debuff)
 		G.E_MANAGER:add_event(Event({
 			func = function()
-
+				ach_learnings_more_fun()
+				ach_ultimate_assembly_unlock()
 				ach_perfect_attendance_unlock()
 				      return true
             	end
@@ -183,7 +186,8 @@ SMODS.Joker {
     add_to_deck = function(self, card, from_debuff)
 		G.E_MANAGER:add_event(Event({
 			func = function()
-	
+				ach_learnings_more_fun()
+				ach_ultimate_assembly_unlock()
 				ach_perfect_attendance_unlock()
 				      return true
             	end
@@ -232,7 +236,8 @@ SMODS.Joker {
     add_to_deck = function(self, card, from_debuff)
 		G.E_MANAGER:add_event(Event({
 			func = function()
-	
+				ach_learnings_more_fun()
+				ach_ultimate_assembly_unlock()	
 				ach_perfect_attendance_unlock()
 				      return true
             	end
@@ -292,7 +297,8 @@ SMODS.Joker {
     add_to_deck = function(self, card, from_debuff)
 		G.E_MANAGER:add_event(Event({
 			func = function()
-	
+				ach_learnings_more_fun()
+				ach_ultimate_assembly_unlock()	
 				ach_perfect_attendance_unlock()
 				      return true
             	end
@@ -351,7 +357,8 @@ SMODS.Joker {
     add_to_deck = function(self, card, from_debuff)
 		G.E_MANAGER:add_event(Event({
 			func = function()
-	
+				ach_learnings_more_fun()
+				ach_ultimate_assembly_unlock()	
 				ach_perfect_attendance_unlock()
 				      return true
             	end
@@ -413,7 +420,8 @@ SMODS.Joker {
     add_to_deck = function(self, card, from_debuff)
 		G.E_MANAGER:add_event(Event({
 			func = function()
-	
+				ach_learnings_more_fun()
+				ach_ultimate_assembly_unlock()
 				ach_perfect_attendance_unlock()
 				      return true
             	end
@@ -457,7 +465,8 @@ SMODS.Joker {
     add_to_deck = function(self, card, from_debuff)
 		G.E_MANAGER:add_event(Event({
 			func = function()
-	
+				ach_learnings_more_fun()
+				ach_ultimate_assembly_unlock()	
 				ach_perfect_attendance_unlock()
 				      return true
             	end
@@ -514,7 +523,8 @@ SMODS.Joker {
     add_to_deck = function(self, card, from_debuff)
 		G.E_MANAGER:add_event(Event({
 			func = function()
-	
+				ach_learnings_more_fun()
+				ach_ultimate_assembly_unlock()	
 				ach_perfect_attendance_unlock()
 				      return true
             	end
@@ -581,7 +591,8 @@ SMODS.Joker {
     add_to_deck = function(self, card, from_debuff)
 		G.E_MANAGER:add_event(Event({
 			func = function()
-	
+				ach_learnings_more_fun()
+				ach_ultimate_assembly_unlock()	
 				ach_perfect_attendance_unlock()
 				      return true
             	end
@@ -650,11 +661,12 @@ SMODS.Joker {
     eternal_compat = true,
     perishable_compat = true,
     unlocked = true,
-    discovered = true,
     atlas = 'CustomJokers',
     add_to_deck = function(self, card, from_debuff)
 			G.E_MANAGER:add_event(Event({
 			func = function()
+				ach_learnings_more_fun()
+				ach_ultimate_assembly_unlock()
 				ach_perfect_attendance_unlock()
 				      return true
             	end
@@ -689,7 +701,8 @@ SMODS.Joker {
     add_to_deck = function(self, card, from_debuff)
 		G.E_MANAGER:add_event(Event({
 			func = function()
-	
+				ach_learnings_more_fun()
+				ach_ultimate_assembly_unlock()
 				ach_perfect_attendance_unlock()
 				      return true
             	end
@@ -734,7 +747,8 @@ SMODS.Joker {
     add_to_deck = function(self, card, from_debuff)
 		G.E_MANAGER:add_event(Event({
 			func = function()
-
+				ach_learnings_more_fun()
+				ach_ultimate_assembly_unlock()
 				ach_perfect_attendance_unlock()
 				      return true
             	end
@@ -784,7 +798,8 @@ SMODS.Joker {
     add_to_deck = function(self, card, from_debuff)
 		G.E_MANAGER:add_event(Event({
 			func = function()
-
+				ach_learnings_more_fun()
+				ach_ultimate_assembly_unlock()
 				ach_perfect_attendance_unlock()
 				      return true
             	end
@@ -839,7 +854,8 @@ SMODS.Joker {
     add_to_deck = function(self, card, from_debuff)
 		G.E_MANAGER:add_event(Event({
 			func = function()
-
+				ach_learnings_more_fun()
+				ach_ultimate_assembly_unlock()
 				ach_perfect_attendance_unlock()
 				      return true
             	end
@@ -850,7 +866,11 @@ SMODS.Joker {
 --  Edward
 SMODS.Joker {
     key = 'edward',
-
+    config = {
+        extra = {
+	    is_student = true
+        }
+    },
     pos = {
         x = 3,
         y = 1
@@ -865,7 +885,8 @@ SMODS.Joker {
     add_to_deck = function(self, card, from_debuff)
 		G.E_MANAGER:add_event(Event({
 			func = function()
-
+				ach_learnings_more_fun()
+				ach_ultimate_assembly_unlock()
 				ach_perfect_attendance_unlock()
 				      return true
             	end
@@ -906,6 +927,7 @@ SMODS.Joker {
     key = 'mister_compass',
     config = {
         extra = {
+			is_teacher = true,
             misterCompassxChips = 1
         }
     },
@@ -920,6 +942,15 @@ SMODS.Joker {
     perishable_compat = true,
     unlocked = false,
     atlas = 'CustomJokers',
+    add_to_deck = function(self, card, from_debuff)
+		G.E_MANAGER:add_event(Event({
+			func = function()
+				ach_ultimate_assembly_unlock()
+				ach_staff_meeting_unlock()
+				      return true
+            	end
+    }))
+	end,
     loc_vars = function(self, info_queue, card)
         return {
             vars = {
@@ -941,7 +972,7 @@ SMODS.Joker {
                      card.ability.extra.misterCompassxChips = (card.ability.extra.misterCompassxChips) + 0.5
                      return true
                    end,
-                   message = localize(k_compass_scale),
+                   message = localize('k_compass_scale'),
                    colour = G.C.BLUE
                 }
             end
@@ -953,6 +984,7 @@ SMODS.Joker {
     key = 'miss_circle',
 	    config = {
         extra = {
+		is_teacher = true,
             missCirclexMult = 1
         }
     },
@@ -967,6 +999,15 @@ SMODS.Joker {
     perishable_compat = true,
 	unlocked = false,
     atlas = 'CustomJokers',
+    add_to_deck = function(self, card, from_debuff)
+		G.E_MANAGER:add_event(Event({
+			func = function()
+				ach_ultimate_assembly_unlock()
+				ach_staff_meeting_unlock()
+				      return true
+            	end
+    }))
+	end,
     loc_vars = function(self, info_queue, card)
         return {
             vars = {
@@ -1000,7 +1041,7 @@ SMODS.Joker {
   SMODS.Joker {
     key = 'miss_thavel',
     config = {
-        extra = { create_consumable_count0 = 1 }
+        extra = { create_consumable_count0 = 1, is_teacher = true }
     },
     pos = {
         x = 7,
@@ -1017,6 +1058,15 @@ SMODS.Joker {
     perishable_compat = true,
 	unlocked = false,
     atlas = 'CustomJokers',
+    add_to_deck = function(self, card, from_debuff)
+		G.E_MANAGER:add_event(Event({
+			func = function()
+				ach_ultimate_assembly_unlock()
+				ach_staff_meeting_unlock()
+				      return true
+            	end
+    }))
+	end,
     loc_vars = function(self, info_queue, card)
         return {
             vars = {
@@ -1041,12 +1091,26 @@ end
 SMODS.Joker {
     key = 'miss_bloomie',
     pos = { x = 9, y = 1 },
+	config = {
+        extra = {
+		is_teacher = true
+		}
+	},
     attributes = { "destroy_card", "enhancements", "seals", "editions" },
     cost = 20,
     rarity = 4,
     blueprint_compat = true,
 	unlocked = false,
     atlas = "CustomJokers",
+    add_to_deck = function(self, card, from_debuff)
+		G.E_MANAGER:add_event(Event({
+			func = function()
+				ach_ultimate_assembly_unlock()
+				ach_staff_meeting_unlock()
+				      return true
+            	end
+    }))
+	end,
     calculate = function(self, card, context)
         if context.discard and #context.full_hand == 1 then
             local target_card = context.full_hand[1]
@@ -1076,6 +1140,11 @@ SMODS.Joker {
         x = 0,
         y = 2
     },
+	config = {
+        extra = {
+		is_teacher = true
+		}
+	},
     cost = 20,
     rarity = 4,
     blueprint_compat = true,
@@ -1083,7 +1152,14 @@ SMODS.Joker {
     perishable_compat = true,
     unlocked = false,
     atlas = 'CustomJokers',
-    add_to_deck = function(self, card, from_debuff)
+	add_to_deck = function(self, card, from_debuff)
+		G.E_MANAGER:add_event(Event({
+			func = function()
+				ach_ultimate_assembly_unlock()
+				ach_staff_meeting_unlock()
+				      return true
+            	end
+    }))
         SMODS.change_play_limit(1)
         SMODS.change_discard_limit(1)
     end,
@@ -1100,6 +1176,11 @@ SMODS.Joker {
         x = 7,
         y = 2
     },
+	config = {
+        extra = {
+			is_teacher = true
+		}
+	},
     cost = 30,
     rarity = 4,
     blueprint_compat = false,
@@ -1107,6 +1188,15 @@ SMODS.Joker {
     perishable_compat = true,
     unlocked = false,
     atlas = 'CustomJokers',
+    add_to_deck = function(self, card, from_debuff)
+		G.E_MANAGER:add_event(Event({
+			func = function()
+				ach_ultimate_assembly_unlock()
+				ach_staff_meeting_unlock()
+				      return true
+            	end
+    }))
+	end,
     calculate = function(self, card, context)
         if context.end_of_round and context.game_over and context.main_eval and not context.blueprint then
             if ((G.GAME.chips or 0) / (G.GAME.blind.chips or 1) * 100) >= 50 then
@@ -1127,7 +1217,8 @@ SMODS.Joker {
         extra = {
             discards0 = 2,
             var_misterDemiDiscards0 = 2,
-            misterDemiDiscards = 2
+            misterDemiDiscards = 2,
+			is_teacher = true
         }
     },
     pos = {
@@ -1151,6 +1242,13 @@ SMODS.Joker {
         }
     end,
     add_to_deck = function(self, card, from_debuff)
+		G.E_MANAGER:add_event(Event({
+			func = function()
+				ach_ultimate_assembly_unlock()
+				ach_staff_meeting_unlock()
+				      return true
+            	end
+    }))
         G.GAME.round_resets.discards = G.GAME.round_resets.discards + 2
     end,
     remove_from_deck = function(self, card, from_debuff)
@@ -1197,6 +1295,15 @@ SMODS.Joker {
     perishable_compat = true,
     unlocked = false,
     atlas = 'CustomJokers',
+    add_to_deck = function(self, card, from_debuff)
+		G.E_MANAGER:add_event(Event({
+			func = function()
+				ach_ultimate_assembly_unlock()
+				ach_staff_meeting_unlock()
+				      return true
+            	end
+    }))
+	end,
     loc_vars = function(self, info_queue, card)
         return {
             vars = {
@@ -1224,7 +1331,7 @@ SMODS.Joker {
 -- Other
 --  Δlice
 SMODS.Joker {
-    key = '_lice',
+    key = 'alice',
     config = {
         extra = {
             numerator_0 = 1,
@@ -1245,6 +1352,14 @@ SMODS.Joker {
     perishable_compat = true,
     unlocked = false,
     atlas = 'CustomJokers',
+	add_to_deck = function(self, card, from_debuff)
+		G.E_MANAGER:add_event(Event({
+			func = function()
+				ach_ultimate_assembly_unlock()
+				      return true
+            	end
+    }))
+	end,
 
     loc_vars = function(self, info_queue, card)
         local new_numerator0, new_denominator0 = SMODS.get_probability_vars(card, self.config.extra.numerator_0, self.config.extra.odds_0, 'j_fpe__lice')

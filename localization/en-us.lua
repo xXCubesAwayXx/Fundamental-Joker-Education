@@ -44,7 +44,7 @@ return {
 			c_fpe_language_arts = {
 				name = "Language Arts",
 				text = {
-					'C:green}#4# in #5# chance{} to apply a random',
+					'{C:green}#4# in #5# chance{} to apply a random',
 					'{C:enhanced}Enhancement{} to {C:attention}3 selected cards{}'
 				}
 			},
@@ -154,7 +154,7 @@ return {
 				}
 			},
 			c_fpe_teacher_s_lounge = {
-				name = "The Notebook",
+				name = "Teacher's Lounge",
 				text = {
 					'Creates a random {C:legendary, E:1}Teacher{} {C:attention}Joker{}',
 					'{C:inactive}Must have room{}'
@@ -383,7 +383,7 @@ return {
 				}
 			},	
 -- Other
-			j_fpe__lice = {
+			j_fpe_alice = {
 				name = "Alice",
 				text = {
 					'{C:green}1 in 2{} chance to apply {C:dark_edition}Negative{} to {C:red}discarded{} {C:attention}face cards{}',
@@ -593,30 +593,30 @@ misc = {
 			ach_fpe_ultimate_assembly = "The Ultimate Assembly!",
 			ach_fpe_best_teachers_ever = "BEST. TEAHCERS. EVER!",
 		-- Ultimate
-			ach_fpe_kaaaties_list = "Kaaatie's List",
+			ach_fpe_baron_of_behavior = "Baron of Behavior",
 		},
 		achievement_descriptions = {
 		-- Bronze
 			ach_fpe_first_student = {"Make a new friend at school.", "(Discover a Student Joker)"},
 			ach_fpe_first_class_card = {"Register your first class.","(Use a Class Card for the first time)"},
-			ach_fpe_paper_destroyed = {"Lose your homework on the first day of class.","(Trigger the Paper enhancement's destroy effect)"},
-			ach_fpe_top_marks = {"Let your high grades boost your confidence. You earned it, prodigy.","(Use your first A+ Seal)"},
+			ach_fpe_paper_destroyed = {"Lose your homework.","(Trigger the Paper", "enhancement's destroy effect)"},
+			ach_fpe_top_marks = {"Let your high grades", "boost your confidence.", "You earned it, prodigy.","(Use your first A+ Seal)"},
 		-- Silver
-			ach_fpe_all_friends = {"Meet and get friendly with all your peers.", "(Discover every Student joker)"},
+			ach_fpe_all_friends = {"Meet and get friendly", "with all your peers.", "(Discover every Student joker)"},
 			ach_fpe_alice = {"Pay a visit to the Princess.","(Use ??? and unlock ALICE)"},
-			ach_fpe_spawn_teacher = {"Get some help from a \"trusted\" adult.","(Use Teacher's Lounge and unlock a Teacher Joker)"},
+			ach_fpe_spawn_teacher = {"Get some help from", "a \"trusted\" adult.","(Use Teacher's Lounge and", "unlock a Teacher Joker)"},
 			ach_fpe_schedule_overload = {"Overload your schedule.","(Discover every Class Card.)"},
 		-- Gold
 			ach_fpe_perfect_attendance = {"Assemble the whole class.", "(Own all 17 Student jokers at once)"},
-			ach_fpe_jpll = {"Prolong your precious little life by any means necessary.", "(Survive 150 rounds)"},
-			ach_fpe_golden_graduates = {"Achieve highest honors with every member of your class.", "(Obtain Gold Stickers on every Student Joker)"},
+			ach_fpe_jpll = {"Prolong your precious little life", "by any means necessary.", "(Survive 150 rounds)"},
+			ach_fpe_golden_graduates = {"Achieve highest honors with", "every member of your class.", "(Obtain Gold Stickers on", "every Student Joker)"},
 			ach_fpe_dedicated_scholar = {"Take 100 classes here.", "(Use 100 {C:class}Class cards{})"},
 		-- Diamond
-			ach_fpe_staff_meeting = {"Catch the attention of the whole staff.", "(Own all 8 Teacher jokers at once)"},
-			ach_fpe_ultimate_assembly = {"Get together with all your paper pals, young and old, mortal and supernatural.", "(Own every base-mod Joker at once)"},
-			ach_fpe_best_teachers_ever = {"Bring your teachers up to be the best, most golden educators they can be.","(Obtain Gold Stickers on every Teacher Joker)"},
+			ach_fpe_staff_meeting = {"Catch the attention", "of the whole staff.", "(Own all 8 Teacher jokers at once)"},
+			ach_fpe_ultimate_assembly = {"Get together with", "all your paper pals,", "young and old,", "mortal and supernatural.", "(Own every base-mod", "Joker at once)"},
+			ach_fpe_best_teachers_ever = {"Bring your teachers up", "to be the best, most golden", "educators they can be.","(Obtain Gold Stickers on", "every Teacher Joker)"},
 		-- Ultimate
-			ach_fpe_kaaaties_list = {"Be the shining star that makes Paper School the best school ever.","(Obtain Gold Stickers on every base-mod Joker"},
+			ach_fpe_baron_of_behavior = {"Be the shining star", "that makes Paper School", "the best school ever.","(Obtain Gold Stickers on", "every base-mod Joker"},
 		},
 }
 

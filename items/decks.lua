@@ -14,10 +14,14 @@ SMODS.Back {
             [2] = '{C:attention}+1{} joker slot'
         }
     },
-    unlocked = true,
-    discovered = true,
+    unlocked = false,
     no_collection = false,
     atlas = 'CustomDecks',
+	check_for_unlock = function(self, args)
+		      if args and args.type == 'ach_all_friends' then	
+			return true
+		end
+      end,
     loc_vars = function(self, info_queue, card)
         return {
             vars = {

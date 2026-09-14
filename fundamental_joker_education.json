@@ -5,10 +5,10 @@
   "author": [
     "xXCubesAwayXx"
   ],
-  "description": "Fundamental Paper Education, now a Balatro mod! FPE was created by the awesome Kaaatie/A3DGhost.",
+  "description": "Fundamental Paper Education, now a Balatro mod! FPE was created by the awesome Kaaatie/A3DGhost. Coming soon: The Dangerously Jolly Forest, an expansion based on Kaaatie's other animations designed to work with Cryptid!",
   "prefix": "fpe",
   "main_file": "fundamental_joker_education.lua",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "priority": 0,
   "badge_colour": "303752",
   "badge_text_colour": "C3D4F1",

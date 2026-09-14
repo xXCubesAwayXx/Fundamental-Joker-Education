@@ -8,8 +8,26 @@ SMODS.ConsumableType {
         8
     },
     shop_rate = 2,
-    cards = {}
+    cards = {
+	['c_fpe_the_halls'] = true,
+	['c_fpe_mathematics'] = true,
+	['c_fpe_language_arts'] = true,
+	['c_fpe_science'] = true,
+	['c_fpe_history'] = true,
+	['c_fpe_art'] = true,
+	['c_fpe_music'] = true,
+	['c_fpe_geometry'] = true,
+	['c_fpe_theatre'] = true,
+	['c_fpe_phys_ed'] = true,
+	['c_fpe_swimming'] = true,
+	['c_fpe_chorus'] = true,
+	['c_fpe_computer_lab'] = true,
+	['c_fpe_detention'] = true,
+	['c_fpe_administration'] = true,
+	['c_fpe_examination'] = true,
+	}
 }
+
 
 SMODS.UndiscoveredSprite {
     key = 'class',
@@ -30,6 +48,8 @@ SMODS.Consumable {
     discovered = false,
     atlas = 'CustomConsumables',
     use = function(self, card, area, copier)
+		 check_for_unlock({ type = "ach_first_class_card" })
+		 class_card_achievement()
         do
             local created_joker = false
             if G.jokers and G.jokers.cards and G.jokers.config and #G.jokers.cards + (G.GAME.joker_buffer or 0) < G.jokers.config.card_limit then
@@ -49,6 +69,7 @@ SMODS.Consumable {
                 colour = G.C.GREEN
             }
         end
+		
     end,
     can_use = function(self, card)
         return G.jokers and #G.jokers.cards < G.jokers.config.card_limit
@@ -85,6 +106,8 @@ SMODS.Consumable {
         }
     end,
     use = function(self, card, area, copier)
+	 check_for_unlock({ type = "ach_first_class_card" })
+	 class_card_achievement()
         local used_card = copier or card
         if #G.hand.highlighted <= 2 and #G.hand.highlighted > 0 then
             if SMODS.pseudorandom_probability(card, 'group0', card.ability.extra.numerator_0, card.ability.extra.odds_0, 'c_fpe_mathematics', false) then
@@ -194,6 +217,8 @@ SMODS.Consumable {
         }
     end,
     use = function(self, card, area, copier)
+		 check_for_unlock({ type = "ach_first_class_card" })
+		 class_card_achievement()
         local used_card = copier or card
         if #G.hand.highlighted <= card.ability.extra.cards_selected_value0 and #G.hand.highlighted > card.ability.extra.cards_selected_value1 then
             if SMODS.pseudorandom_probability(card, 'group0', card.ability.extra.numerator_0, card.ability.extra.odds_0, 'c_fpe_language_arts', false) then
@@ -296,6 +321,8 @@ SMODS.Consumable {
         }
     end,
     use = function(self, card, area, copier)
+		 check_for_unlock({ type = "ach_first_class_card" })
+		 class_card_achievement()
         do
           local _handname, _played = 'High Card', -1
           for hand_key, hand in pairs(G.GAME.hands) do
@@ -380,6 +407,8 @@ SMODS.Consumable {
         }
     end,
     use = function(self, card, area, copier)
+			 check_for_unlock({ type = "ach_first_class_card" })
+			 class_card_achievement()
             if SMODS.pseudorandom_probability(card, 'group0', card.ability.extra.numerator_0, card.ability.extra.odds_0, 'c_fpe_history', false) then
                         card_eval_status_text(card, 'extra', nil, nil, nil, {message = "+"..tostring(card.ability.extra.hands0).." Hands", colour = G.C.GREEN})
                         G.GAME.round_resets.hands = G.GAME.round_resets.hands + card.ability.extra.hands0
@@ -452,6 +481,8 @@ SMODS.Consumable {
         }
     end,
     use = function(self, card, area, copier)
+			 check_for_unlock({ type = "ach_first_class_card" })
+			 class_card_achievement()
             if SMODS.pseudorandom_probability(card, 'group0', card.ability.extra.numerator_0, card.ability.extra.odds_0, 'c_fpe_art', false) then
                         card_eval_status_text(card, 'extra', nil, nil, nil, {message = "+"..tostring(card.ability.extra.hand_size0)..' Hand Limit', colour = G.C.BLUE})
                         G.hand:change_size(card.ability.extra.hand_size0)
@@ -529,6 +560,8 @@ SMODS.Consumable {
         }
     end,
     use = function(self, card, area, copier)
+			 check_for_unlock({ type = "ach_first_class_card" })
+			 class_card_achievement()
             if SMODS.pseudorandom_probability(card, 'group0', card.ability.extra.numerator_0, card.ability.extra.odds_0, 'c_fpe_music', false) then
                         card_eval_status_text(card, 'extra', nil, nil, nil, {message = "+"..tostring(card.ability.extra.discards0).." Discards", colour = G.C.GREEN})
                         G.GAME.round_resets.discards = G.GAME.round_resets.discards + card.ability.extra.discards0
@@ -605,6 +638,8 @@ SMODS.Consumable {
         }
     end,
     use = function(self, card, area, copier)
+			 check_for_unlock({ type = "ach_first_class_card" })
+			 class_card_achievement()
         local used_card = copier or card
         if #G.hand.highlighted <= 2 and #G.hand.highlighted > 0 then
             if SMODS.pseudorandom_probability(card, 'group0', card.ability.extra.numerator_0, card.ability.extra.odds_0, 'c_fpe_geometry', false) then
@@ -710,6 +745,8 @@ SMODS.Consumable {
         }
     end,
     use = function(self, card, area, copier)
+			 check_for_unlock({ type = "ach_first_class_card" })
+			 class_card_achievement()
         if #G.jokers.cards > card.ability.extra.joker_count_value0 then
             if SMODS.pseudorandom_probability(card, 'group0', card.ability.extra.numerator_0, card.ability.extra.odds_0, 'c_fpe_theatre', false) then
             local editionless_jokers = SMODS.Edition:get_edition_cards(G.jokers, true)
@@ -785,6 +822,8 @@ SMODS.Consumable {
         }
     end,
     use = function(self, card, area, copier)
+			 check_for_unlock({ type = "ach_first_class_card" })
+			 class_card_achievement()
         do
             if SMODS.pseudorandom_probability(card, 'group0', card.ability.extra.numerator_0, card.ability.extra.odds_0, 'c_fpe_phys_ed', false) then
                         card_eval_status_text(card, 'extra', nil, nil, nil, {message = "+"..tostring(card.ability.extra.booster_slots0)..' Booster Slots', colour = G.C.BLUE})
@@ -858,6 +897,8 @@ SMODS.Consumable {
         }
     end,
     use = function(self, card, area, copier)
+			 check_for_unlock({ type = "ach_first_class_card" })
+			 class_card_achievement()
             if SMODS.pseudorandom_probability(card, 'group0', card.ability.extra.numerator_0, card.ability.extra.odds_0, 'c_fpe_swimming', false) then
                         card_eval_status_text(card, 'extra', nil, nil, nil, {message = "+"..tostring(card.ability.extra.booster_slots0)..' Booster Slots', colour = G.C.BLUE})
                         SMODS.change_booster_limit(card.ability.extra.booster_slots0)
@@ -933,6 +974,8 @@ SMODS.Consumable {
         }
     end,
     use = function(self, card, area, copier)
+		 check_for_unlock({ type = "ach_first_class_card" })
+		 class_card_achievement()
         local used_card = copier or card
         if #G.hand.highlighted <= card.ability.extra.cards_selected_value0 and #G.hand.highlighted > card.ability.extra.cards_selected_value1 then
             if SMODS.pseudorandom_probability(card, 'group0', card.ability.extra.numerator_0, card.ability.extra.odds_0, 'c_fpe_chorus', false) then
@@ -1035,6 +1078,8 @@ SMODS.Consumable {
         }
     end,
     use = function(self, card, area, copier)
+		 check_for_unlock({ type = "ach_first_class_card" })
+		 class_card_achievement()
         do
             if SMODS.pseudorandom_probability(card, 'group0', card.ability.extra.numerator_0, card.ability.extra.odds_0, 'c_fpe_computer_lab', false) then
                 local created_joker = false
@@ -1122,6 +1167,8 @@ SMODS.Consumable {
         }
     end,
     use = function(self, card, area, copier)
+		 check_for_unlock({ type = "ach_first_class_card" })
+		 class_card_achievement()
         do
             if SMODS.pseudorandom_probability(card, 'group0', card.ability.extra.numerator_0, card.ability.extra.odds_0, 'c_fpe_detention', false) then
                 local mod = -card.ability.extra.ante_value0; ease_ante(mod); G.GAME.round_resets.blind_ante = (G.GAME.round_resets.blind_ante or 0) + mod
@@ -1191,6 +1238,8 @@ SMODS.Consumable {
         }
     end,
     use = function(self, card, area, copier)
+		 check_for_unlock({ type = "ach_first_class_card" })
+		 class_card_achievement()
         do
             for _ = 1, card.ability.extra.create_consumable_count0 do if #G.consumeables.cards + (G.GAME.consumeable_buffer or 0) < G.consumeables.config.card_limit then SMODS.add_card({ area = G.consumeables, soulable = true, set = 'class' }) end end
             return {
@@ -1236,6 +1285,8 @@ SMODS.Consumable {
         }
     end,
     use = function(self, card, area, copier)
+		 check_for_unlock({ type = "ach_first_class_card" })
+		 class_card_achievement()
         local used_card = copier or card
         if #G.hand.highlighted == 1 then
             if SMODS.pseudorandom_probability(card, 'group0', card.ability.extra.numerator_0, card.ability.extra.odds_0, 'c_fpe_examination', false) then

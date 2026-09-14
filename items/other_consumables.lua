@@ -23,7 +23,7 @@ SMODS.Consumable {
                 G.GAME.joker_buffer = (G.GAME.joker_buffer or 0) + 1
             G.E_MANAGER:add_event(Event({
             func = function()
-            local joker_card = SMODS.add_card({ set = 'Joker', key = 'j_fpe__lice' })
+            local joker_card = SMODS.add_card({ set = 'Joker', key = 'j_fpe_alice' })
                         G.GAME.joker_buffer = math.max(0, (G.GAME.joker_buffer or 1) - 1)
 						check_for_unlock { type = 'fpe_spawn_alice' }
 						check_for_unlock { type = 'ach_alice' }
