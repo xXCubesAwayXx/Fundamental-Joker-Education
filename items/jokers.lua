@@ -1334,6 +1334,7 @@ SMODS.Joker {
     key = 'alice',
     config = {
         extra = {
+			is_alice = true,
             numerator_0 = 1,
             odds_0 = 2,
             aliceXMult = 1

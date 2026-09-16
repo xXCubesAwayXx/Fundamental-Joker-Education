@@ -137,6 +137,12 @@ function Game:main_menu(change_context)
           G.C.WHITE, 1)
       end
     end
+	if v.config and v.config.extra and type(v.config.extra) == "table" and v.config.extra.is_alice then
+      v.set_badges = function(self, card, badges)
+        badges[#badges + 1] = create_badge(localize('alice_joker_badge'), HEX('5d3b39'),
+          HEX('A08A86'), 1)
+      end
+    end
   end
   ref(self, change_context)
 end

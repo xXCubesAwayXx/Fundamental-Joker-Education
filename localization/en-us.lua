@@ -567,6 +567,7 @@ misc = {
 			["k_compass_scale"] = "... want a kitkat?",
 			["student_joker_badge"] = "Student of Paper School",
 			["teacher_joker_badge"] = "Faculty/Staff of Paper School",
+			["alice_joker_badge"] = "Princess of Malice",
 			["k_spawn_alice"] = "WHAT HAVE YOU DONE!?",
 		},
 		["labels"] = {

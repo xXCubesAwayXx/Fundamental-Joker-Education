@@ -10,7 +10,6 @@ SMODS.Voucher {
     },
     cost = 10,
     unlocked = true,
-    discovered = true,
     atlas = 'CustomVouchers',
     loc_vars = function(self, info_queue, card)
         return {
@@ -41,8 +40,7 @@ SMODS.Voucher {
         extra = { item_rate0 = 8 }
     },
     cost = 10,
-    unlocked = true,
-    discovered = true,
+    unlocked = false,
     requires = { 'v_fpe_class_merchant' },
     atlas = 'CustomVouchers',
     loc_vars = function(self, info_queue, card)
@@ -59,10 +57,9 @@ SMODS.Voucher {
             colour = G.C.BLUE
         }
     end,
-    locked_loc_vars = function(self, info_queue, card)
-        return { vars = { 50, G.PROFILES[G.SETTINGS.profile].career_stats.c_tarots_bought } }
-    end,
-    check_for_unlock = function(self, args)
-        return args.type == 'c_tarots_bought' and G.PROFILES[G.SETTINGS.profile].career_stats.c_tarots_bought >= 50
-    end
+	check_for_unlock = function(self, args)
+		      if args and args.type == 'v_class_tycoon' then	
+			return true
+		end
+      end,
 }

@@ -263,7 +263,7 @@ SMODS.Achievement({
 	key = "golden_graduates",
 	pos = {x = 2, y = 0},
 	hidden_pos = { x = 2, y = 1 },
-	bypass_all_unlocked = false,
+	bypass_all_unlocked = true,
 	atlas = "CustomAchievements",
 	reset_on_startup = false,
 unlock_condition = function (self, args)
@@ -271,8 +271,9 @@ unlock_condition = function (self, args)
 local fpe_students_gold_stake = 0
 for _, j in ipairs(G.P_CENTER_POOLS.fpe_students) do
 if get_joker_win_sticker(G.P_CENTERS[j.key], true) >= 8 then
-fpe_students_gold_stake = fpe_students_gold_stake + 1 end end
-if fpe_students_gold_stake == 17 then
+fpe_students_gold_stake = fpe_students_gold_stake + 1 end
+ end
+if fpe_students_gold_stake >= 17 then
     return true
 end
 end
@@ -295,6 +296,8 @@ for _, c in ipairs(G.P_CENTER_POOLS.class) do
     if usage then
         total = total + usage.count
     end
+end
+if total >= 50 then check_for_unlock ({ type = "v_class_tycoon" })
 end
 if total >= 100 then check_for_unlock ({ type = "ach_dedicated_scholar" })
 end
@@ -378,7 +381,7 @@ SMODS.Achievement({
 	hidden_pos = { x = 3, y = 1 },
 	bypass_all_unlocked = true,
 	atlas = "CustomAchievements",
-	reset_on_startup = true,
+	reset_on_startup = false,
 unlock_condition = function (self, args)
   if args and args.type == "win_stake" then
 local fpe_teachers_gold_stake = 0
@@ -386,7 +389,7 @@ for _, j in ipairs(G.P_CENTER_POOLS.fpe_teachers) do
 if get_joker_win_sticker(G.P_CENTERS[j.key], true) >= 8 then
 fpe_teachers_gold_stake = fpe_teachers_gold_stake + 1 end
  end
-if fpe_teachers_gold_stake == 8 then
+if fpe_teachers_gold_stake >= 8 then
     return true
 end
 end
@@ -408,7 +411,7 @@ for _, j in ipairs(G.P_CENTER_POOLS.fpe_jokers) do
 if get_joker_win_sticker(G.P_CENTERS[j.key], true) >= 8 then
 fpe_jokers_gold_stake = fpe_jokers_gold_stake + 1 end
  end
-if fpe_jokers_gold_stake == 26 then
+if fpe_jokers_gold_stake >= 26 then
     return true
 end
 end
