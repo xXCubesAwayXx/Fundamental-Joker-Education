@@ -1282,7 +1282,7 @@ SMODS.Joker {
 SMODS.Joker {
     key = 'miss_sasha',
     config = {
-        extra = { hand_size0 = 1 }
+        extra = { hand_size0 = 1, is_teacher = true }
     },
     pos = {
         x = 2,

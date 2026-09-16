@@ -269,10 +269,10 @@ SMODS.Achievement({
 unlock_condition = function (self, args)
   if args and args.type == "win_stake" then
 local fpe_students_gold_stake = 0
-for _, card in ipairs(G.P_CENTER_POOLS.fpe_jokers) do
-if get_joker_win_sticker(G.P_CENTERS[S], true) >= 8 then
+for _, j in ipairs(G.P_CENTER_POOLS.fpe_students) do
+if get_joker_win_sticker(G.P_CENTERS[j.key], true) >= 8 then
 fpe_students_gold_stake = fpe_students_gold_stake + 1 end end
-if fpe_jokers_gold_stake == 17 then
+if fpe_students_gold_stake == 17 then
     return true
 end
 end
@@ -382,8 +382,8 @@ SMODS.Achievement({
 unlock_condition = function (self, args)
   if args and args.type == "win_stake" then
 local fpe_teachers_gold_stake = 0
-for _, card in ipairs(G.P_CENTER_POOLS.fpe_teachers) do
-if get_joker_win_sticker(G.P_CENTERS[S], true) >= 8 then
+for _, j in ipairs(G.P_CENTER_POOLS.fpe_teachers) do
+if get_joker_win_sticker(G.P_CENTERS[j.key], true) >= 8 then
 fpe_teachers_gold_stake = fpe_teachers_gold_stake + 1 end
  end
 if fpe_teachers_gold_stake == 8 then
@@ -404,8 +404,8 @@ SMODS.Achievement({
 unlock_condition = function (self, args)
   if args and args.type == "win_stake" then
 local fpe_jokers_gold_stake = 0
-for _, card in ipairs(G.P_CENTER_POOLS.fpe_jokers) do
-if get_joker_win_sticker(G.P_CENTERS[S], true) >= 8 then
+for _, j in ipairs(G.P_CENTER_POOLS.fpe_jokers) do
+if get_joker_win_sticker(G.P_CENTERS[j.key], true) >= 8 then
 fpe_jokers_gold_stake = fpe_jokers_gold_stake + 1 end
  end
 if fpe_jokers_gold_stake == 26 then
