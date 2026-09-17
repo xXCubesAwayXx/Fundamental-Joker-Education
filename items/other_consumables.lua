@@ -11,8 +11,8 @@ SMODS.Consumable {
     unlocked = true,
     discovered = false,
     hidden = true,
-    soul_set = 'fpe_class',
-    soul_rate = 0.03,
+    soul_set = 'class',
+    soul_rate = 0.015,
     can_repeat_soul = true,
     atlas = 'CustomConsumables',
     use = function(self, card, area, copier)
@@ -62,8 +62,8 @@ SMODS.Consumable {
     unlocked = true,
     discovered = false,
     hidden = true,
-    soul_set = 'fpe_class',
-    soul_rate = 0.03,
+    soul_set = 'class',
+    soul_rate = 0.015,
     can_repeat_soul = true,
     atlas = 'CustomConsumables',
     use = function(self, card, area, copier)
