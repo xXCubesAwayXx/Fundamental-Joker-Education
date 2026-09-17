@@ -393,7 +393,16 @@ return {
 				unlock = {
 					"{C:attention}Enter{} the {C:spectral}forbidden room{}."
 				}
-			}
+			},
+-- Expansion
+-- Friends of Claire
+			j_fpe_biscuit = {
+				name = "Biscuit",
+				text = {
+					"Add level of highest level {C:attention}Cat Tag{} to this Joker's {X:mult,C:white}XMult{}",
+					"{C:inactive}(Currently{} {X:mult,C:white}#1#{} {C:inactive}Mult){}"
+				},
+			},
 		},
 		
 		Voucher = {
@@ -434,7 +443,23 @@ return {
 			},
 		},
 		
-		Pack = {
+		Tag = {
+			tag_fpe_open_house = {
+				name = 'Open House Tag',
+				text = {
+					'Gives a free',
+					'{C:class}Mega Schedule Pack{}'
+				},
+			},
+			tag_fpe_malice = {
+				name = 'Malice Tag',
+				text = {
+					'{C:attention}Halves the requirements{} of the next Blind'
+				},
+			},
+		},
+		
+		Other = {
 			p_fpe_schedule_pack_normal_1 = {
 				name = "Schedule Pack",
 				text = {
@@ -457,22 +482,12 @@ return {
 				group_name = "Schedule Pack"
 			},
 			p_fpe_schedule_pack_mega = {
-				name = "Schedule Pack",
+				name = "Mega Schedule Pack",
 				text = {
 					'Choose {C:attention}2{} of up to {C:attention}5{} {C:class}Class{} cards to be used immediately'
 				},
 				group_name = "Schedule Pack"
 			},			
-		},
-		
-		Other = {
-			tag_fpe_open_house = {
-				name = 'Open House Tag',
-				text = {
-					'Gives a free',
-					'{C:class}Mega Schedule Pack{}'
-				},
-			},
 			fpe_a_seal = {
 				name = 'A+ Seal',
 				text= {
@@ -568,6 +583,7 @@ misc = {
 			["student_joker_badge"] = "Student of Paper School",
 			["teacher_joker_badge"] = "Faculty/Staff of Paper School",
 			["alice_joker_badge"] = "Princess of Malice",
+			["expansion_joker_badge"] = "Dangerously Jolly Forest Expansion",
 			["k_spawn_alice"] = "WHAT HAVE YOU DONE!?",
 		},
 		["labels"] = {

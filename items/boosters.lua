@@ -1,13 +1,6 @@
 
 SMODS.Booster {
     key = 'schedule_pack_normal_1',
-    loc_txt = {
-        name = "Schedule Pack",
-        text = {
-            [1] = 'Choose {C:attention}1{} of up to {C:attention}3{} {C:class}Class{} cards to be used immediately'
-        },
-        group_name = "Schedule Pack"
-    },
     config = { extra = 3, choose = 1 },
     cost = 6,
     weight = 4,
@@ -43,7 +36,7 @@ SMODS.Booster {
             speed = 1.1,
             padding = -1,
             attach = G.ROOM_ATTACH,
-            colours = { G.C.WHITE, lighten(G.C.PURPLE, 0.4), lighten(G.C.PURPLE, 0.2), lighten(G.C.GOLD, 0.2) },
+            colours = { G.C.WHITE, lighten(HEX('a1b3ce'), 0.4), lighten(G.C.RED, 0.2), lighten(HEX('303752'), 0.2) },
             fill = true
         })
         G.booster_pack_sparkles.fade_alpha = 1
@@ -54,13 +47,6 @@ SMODS.Booster {
 
 SMODS.Booster {
     key = 'schedule_pack_normal_2',
-    loc_txt = {
-        name = "Schedule Pack",
-        text = {
-            [1] = 'Choose {C:attention}1{} of up to {C:attention}3{} {C:class}Class{} cards to be used immediately'
-        },
-        group_name = "Schedule Pack"
-    },
     config = { extra = 3, choose = 1 },
     cost = 6,
     weight = 4,
@@ -96,7 +82,7 @@ SMODS.Booster {
             speed = 1.1,
             padding = -1,
             attach = G.ROOM_ATTACH,
-            colours = { G.C.WHITE, lighten(G.C.PURPLE, 0.4), lighten(G.C.PURPLE, 0.2), lighten(G.C.GOLD, 0.2) },
+            colours = { G.C.WHITE, lighten(HEX('a1b3ce'), 0.4), lighten(G.C.RED, 0.2), lighten(HEX('303752'), 0.2) },
             fill = true
         })
         G.booster_pack_sparkles.fade_alpha = 1
@@ -106,13 +92,6 @@ SMODS.Booster {
 
 SMODS.Booster {
     key = 'schedule_pack_jumbo',
-    loc_txt = {
-        name = "Jumbo Schedule Pack",
-        text = {
-            [1] = 'Choose {C:attention}1{} of up to {C:attention}5{} {C:class}Class{} cards to be used immediately'
-        },
-        group_name = "Schedule Pack"
-    },
     config = { extra = 5, choose = 1 },
     cost = 8,
     weight = 4,
@@ -148,7 +127,7 @@ SMODS.Booster {
             speed = 1.1,
             padding = -1,
             attach = G.ROOM_ATTACH,
-            colours = { G.C.WHITE, lighten(G.C.PURPLE, 0.4), lighten(G.C.PURPLE, 0.2), lighten(G.C.GOLD, 0.2) },
+            colours = { G.C.WHITE, lighten(HEX('a1b3ce'), 0.4), lighten(G.C.RED, 0.2), lighten(HEX('303752'), 0.2) },
             fill = true
         })
         G.booster_pack_sparkles.fade_alpha = 1
@@ -158,16 +137,9 @@ SMODS.Booster {
 
 SMODS.Booster {
     key = 'schedule_pack_mega',
-    loc_txt = {
-        name = "Mega Schedule Pack",
-        text = {
-            [1] = 'Choose {C:attention}2{} of up to {C:attention}5{} {C:class}Class{} cards to be used immediately'
-        },
-        group_name = "Schedule Pack"
-    },
     config = { extra = 5, choose = 2 },
     cost = 10,
-    weight = 4,
+    weight = 1,
     atlas = "CustomBoosters",
     pos = { x = 3, y = 0 },
     kind = 'Class',
@@ -200,7 +172,7 @@ SMODS.Booster {
             speed = 1.1,
             padding = -1,
             attach = G.ROOM_ATTACH,
-            colours = { G.C.WHITE, lighten(G.C.PURPLE, 0.4), lighten(G.C.PURPLE, 0.2), lighten(G.C.GOLD, 0.2) },
+            colours = { G.C.WHITE, lighten(HEX('a1b3ce'), 0.4), lighten(G.C.RED, 0.2), lighten(HEX('303752'), 0.2) },
             fill = true
         })
         G.booster_pack_sparkles.fade_alpha = 1

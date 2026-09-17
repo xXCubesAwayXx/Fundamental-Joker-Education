@@ -3,17 +3,8 @@ SMODS.Tag {
     key = "open_house",
     min_ante = 2,
     pos = { x = 0, y = 0 },
-    loc_txt = {
-        ['name'] = 'Open House Tag',
-        ['text'] = {
-            [1] = 'Gives a free',
-            [2] = '{C:class}Mega Schedule Pack{}'
-        },
-        ['unlock'] = {
-            [1] = 'No description'
-        }
-    },
     atlas = 'CustomTags',
+	shiny_atlas = 'ShinyTags',
     loc_vars = function(self, info_queue, tag)
         info_queue[#info_queue + 1] = G.P_CENTERS.p_schedule_pack_mega
     end,
@@ -32,6 +23,26 @@ SMODS.Tag {
                 G.FUNCS.use_card({ config = { ref_table = booster } })
                 booster:start_materialize()
                 G.CONTROLLER.locks[lock] = nil
+                return true
+            end)
+            tag.triggered = true
+            return true
+        end
+    end
+}
+-- Malice Tag
+SMODS.Tag {
+    key = "malice",
+    min_ante = 2,
+    pos = { x = 1, y = 0 },
+    atlas = 'CustomTags',
+	shiny_atlas = 'ShinyTags',
+    apply = function(self, tag, context)
+        if context.type == 'round_start_bonus' then
+            tag:yep('+', HEX('7f3f3f'), function()
+				G.GAME.blind.chips = G.GAME.blind.chips * 0.5
+                G.GAME.blind.chip_text = number_format(G.GAME.blind.chips)
+                G.HUD_blind:recalculate()
                 return true
             end)
             tag.triggered = true

@@ -103,6 +103,22 @@ SMODS.Atlas({
     atlas_table = "ASSET_ATLAS"
 })
 
+SMODS.Atlas({
+    key = "ShinyTags",
+    path = "ShinyTags.png",
+    px = 34,
+    py = 34,
+    atlas_table = "ASSET_ATLAS"
+})
+
+SMODS.Atlas({
+    key = "CryptidJokers",
+    path = "CryptidJokers.png",
+    px = 71,
+    py = 95,
+    atlas_table = "ASSET_ATLAS"
+})
+
 local NFS = require("nativefs")
 to_big = to_big or function(a) return a end
 lenient_bignum = lenient_bignum or function(a) return a end
@@ -121,6 +137,7 @@ assert(SMODS.load_file("items/tags.lua"))()
 assert(SMODS.load_file("items/quips.lua"))()
 assert(SMODS.load_file("items/achievements.lua"))()
 assert(SMODS.load_file("cryptid/vouchers.lua"))()
+assert(SMODS.load_file("cryptid/jokers/friends_of_claire.lua"))()
 
 local ref = Game.main_menu
 function Game:main_menu(change_context)
@@ -141,6 +158,12 @@ function Game:main_menu(change_context)
       v.set_badges = function(self, card, badges)
         badges[#badges + 1] = create_badge(localize('alice_joker_badge'), HEX('5d3b39'),
           HEX('A08A86'), 1)
+      end
+    end
+	if v.config and v.config.extra and type(v.config.extra) == "table" and v.config.extra.is_expansion then
+      v.set_badges = function(self, card, badges)
+        badges[#badges + 1] = create_badge(localize('expansion_joker_badge'), HEX('48576d'),
+          HEX('A7B7D4'), 1)
       end
     end
   end
