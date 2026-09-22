@@ -36,7 +36,7 @@ SMODS.Booster {
             speed = 1.1,
             padding = -1,
             attach = G.ROOM_ATTACH,
-            colours = { G.C.WHITE, lighten(HEX('a1b3ce'), 0.4), lighten(G.C.RED, 0.2), lighten(HEX('303752'), 0.2) },
+            colours = { G.C.WHITE, lighten(HEX('AC8491'), 0.4), lighten(HEX('8190B3'), 0.2), lighten(HEX('909A8B'), 0.2), lighten(HEX('AFAA86'), 0.2), lighten(HEX('AB7F75'), 0.2), lighten(HEX('6F719A'), 0.2), lighten(HEX('8B7B95'), 0.2), },
             fill = true
         })
         G.booster_pack_sparkles.fade_alpha = 1
@@ -82,7 +82,7 @@ SMODS.Booster {
             speed = 1.1,
             padding = -1,
             attach = G.ROOM_ATTACH,
-            colours = { G.C.WHITE, lighten(HEX('a1b3ce'), 0.4), lighten(G.C.RED, 0.2), lighten(HEX('303752'), 0.2) },
+            colours = { G.C.WHITE, lighten(HEX('AC8491'), 0.4), lighten(HEX('8190B3'), 0.2), lighten(HEX('909A8B'), 0.2), lighten(HEX('AFAA86'), 0.2), lighten(HEX('AB7F75'), 0.2), lighten(HEX('6F719A'), 0.2), lighten(HEX('8B7B95'), 0.2), },
             fill = true
         })
         G.booster_pack_sparkles.fade_alpha = 1
@@ -127,7 +127,7 @@ SMODS.Booster {
             speed = 1.1,
             padding = -1,
             attach = G.ROOM_ATTACH,
-            colours = { G.C.WHITE, lighten(HEX('a1b3ce'), 0.4), lighten(G.C.RED, 0.2), lighten(HEX('303752'), 0.2) },
+            colours = { G.C.WHITE, lighten(HEX('AC8491'), 0.4), lighten(HEX('8190B3'), 0.2), lighten(HEX('909A8B'), 0.2), lighten(HEX('AFAA86'), 0.2), lighten(HEX('AB7F75'), 0.2), lighten(HEX('6F719A'), 0.2), lighten(HEX('8B7B95'), 0.2), },
             fill = true
         })
         G.booster_pack_sparkles.fade_alpha = 1
@@ -172,7 +172,7 @@ SMODS.Booster {
             speed = 1.1,
             padding = -1,
             attach = G.ROOM_ATTACH,
-            colours = { G.C.WHITE, lighten(HEX('a1b3ce'), 0.4), lighten(G.C.RED, 0.2), lighten(HEX('303752'), 0.2) },
+            colours = { G.C.WHITE, lighten(HEX('AC8491'), 0.4), lighten(HEX('8190B3'), 0.2), lighten(HEX('909A8B'), 0.2), lighten(HEX('AFAA86'), 0.2), lighten(HEX('AB7F75'), 0.2), lighten(HEX('6F719A'), 0.2), lighten(HEX('8B7B95'), 0.2), },
             fill = true
         })
         G.booster_pack_sparkles.fade_alpha = 1
