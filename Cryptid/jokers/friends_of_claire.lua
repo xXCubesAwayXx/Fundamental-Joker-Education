@@ -31,6 +31,17 @@ SMODS.Joker {
             }
         }
     end,
+	in_pool = function(self)
+		if not G.GAME.tags or #G.GAME.tags == 0 then
+			return false
+		end
+		for _, tag in pairs(G.GAME.tags) do
+			if tag.key == "tag_cry_cat" then
+				return true
+			end
+		end
+		return false
+	end,
 	calculate = function(self, card, context)
 		if context.joker_main then
 			do
