@@ -5,7 +5,7 @@ SMODS.Sound({
   path = "music_classbooster.ogg",
   select_music_track = function()
     if G.booster_pack and SMODS.OPENED_BOOSTER and
-        SMODS.OPENED_BOOSTER.config.center.kind == "Class" 
+        SMODS.OPENED_BOOSTER.config.center.kind == "class" 
         then
       return true
     end

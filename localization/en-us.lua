@@ -177,7 +177,7 @@ return {
 			j_fpe_claire = {
 				name = "Claire",
 				text = {
-					'At end of round, {C:money}multiplies money by 1.5{}',
+					'At end of round, {X:money,C:white}X1.5{} money',
 					'{C:inactive}Max{} {C:money}$10{}',
 				}
 			},
@@ -260,7 +260,7 @@ return {
 			j_fpe_skell = {
 				name = "Skell",
 				text = {
-					'{X:mult,C:white}1.5{} Mult on {C:attention}first hand of round{}'
+					'{X:mult,C:white}X1.5{} Mult on {C:attention}first hand of round{}'
 				}
 			},
 			j_fpe_ruby = {
@@ -301,9 +301,9 @@ return {
 			j_fpe_miss_circle = {
 				name = "Miss Circle",
 				text = {
-					'This Joker gains {X:mult,C:white}0.5{} Mult when',
+					'This Joker gains {X:mult,C:white}X0.5{} Mult when',
 					'{C:attention}scoring hand matches blind requirement on its own{}',
-					'{C:inactive}(Currently{} {X:mult,C:white}#1#{} {C:inactive}Mult){}'
+					'{C:inactive}(Currently{} {X:mult,C:white}X#1#{} {C:inactive}Mult){}'
 				},
 				unlock = {
 					"Find this {C:attention}Joker{} from the {C:spectral}Teacher's Lounge{} card"
@@ -334,9 +334,9 @@ return {
 			j_fpe_mister_compass = {
 				name = "Mister Compass",
 				text = {
-					'This Joker gains {X:chips,C:white}0.5{} Chips when',
+					'This Joker gains {X:chips,C:white}X0.5{} Chips when',
 					'{C:attention}scoring hand matches blind requirement on its own{}',
-					'{C:inactive}(Currently{} {X:chips,C:white}#1#{} {C:inactive}Chips){}'
+					'{C:inactive}(Currently{} {X:chips,C:white}X#1#{} {C:inactive}Chips){}'
 				},
 				unlock = {
 					"Find this {C:attention}Joker{} from the {C:spectral}Teacher's Lounge{} card"
@@ -400,11 +400,16 @@ return {
 				name = "Biscuit",
 				text = {
 					"Add level of highest level {C:attention}Cat Tag{} to this Joker's {X:mult,C:white}XMult{}",
-					"{C:inactive}(Currently{} {X:mult,C:white}#1#{} {C:inactive}Mult){}"
+					"{C:inactive}(Currently{} {X:mult,C:white}X#1#{} {C:inactive}Mult){}"
+				},
+			},
+			j_fpe_anova = {
+				name = "Anova",
+				text = {
+					"If played hand has at least {C:attention}6 scoring cards{}, apply {X:mult,C:white}X4{} Mult",
 				},
 			},
 		},
-		
 		Voucher = {
 			v_fpe_class_merchant = {
 				name = 'Class Merchant',
@@ -463,28 +468,36 @@ return {
 			p_fpe_schedule_pack_normal_1 = {
 				name = "Schedule Pack",
 				text = {
-					'Choose {C:attention}1{} of up to {C:attention}3{} {C:class}Class{} cards to be used immediately'
+					'Choose {C:attention}#1#{} of up to',
+					'{C:attention}#2#{} {C:class}Class{} cards to',
+					'be used immediately'
 				},
 				group_name = "Schedule Pack"
 			},
 			p_fpe_schedule_pack_normal_2 = {
 				name = "Schedule Pack",
 				text = {
-					'Choose {C:attention}1{} of up to {C:attention}3{} {C:class}Class{} cards to be used immediately'
+					'Choose {C:attention}#1#{} of up to',
+					'{C:attention}#2#{} {C:class}Class{} cards to',
+					'be used immediately'
 				},
 				group_name = "Schedule Pack"
 			},
 			p_fpe_schedule_pack_jumbo = {
 				name = "Jumbo Schedule Pack",
 				text = {
-					'Choose {C:attention}1{} of up to {C:attention}5{} {C:class}Class{} cards to be used immediately'
+					'Choose {C:attention}#1#{} of up to',
+					'{C:attention}#2#{} {C:class}Class{} cards to',
+					'be used immediately'
 				},
 				group_name = "Schedule Pack"
 			},
 			p_fpe_schedule_pack_mega = {
 				name = "Mega Schedule Pack",
 				text = {
-					'Choose {C:attention}2{} of up to {C:attention}5{} {C:class}Class{} cards to be used immediately'
+					'Choose {C:attention}#1#{} of up to',
+					'{C:attention}#2#{} {C:class}Class{} cards to',
+					'be used immediately'
 				},
 				group_name = "Schedule Pack"
 			},			

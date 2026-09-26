@@ -1,4 +1,15 @@
 
+local class_digital_hallucinations_compat = {
+	colour = HEX("a1b3ce"),
+      loc_key = "fpe_plus_class",
+      create = function()
+          local ccard = create_card("class", G.consumeables, nil, nil, nil, nil, nil, "diha")
+          ccard:set_edition({ negative = true }, true)
+          ccard:add_to_deck()
+          G.consumeables:emplace(ccard)
+      end,
+}
+
 SMODS.Booster {
     key = 'schedule_pack_normal_1',
     config = { extra = 3, choose = 1 },
@@ -6,7 +17,7 @@ SMODS.Booster {
     weight = 4,
     atlas = "CustomBoosters",
     pos = { x = 0, y = 0 },
-    kind = 'Class',
+    kind = 'class',
     draw_hand = true,
     discovered = true,
     loc_vars = function(self, info_queue, card)
@@ -30,18 +41,19 @@ SMODS.Booster {
     particles = function(self)
         G.booster_pack_sparkles = Particles(1, 1, 0, 0, {
             timer = 0.015,
-            scale = 0.2,
+            scale = 0.3,
             initialize = true,
-            lifespan = 1,
-            speed = 1.1,
+            lifespan = 3,
+            speed = 0.2,
             padding = -1,
             attach = G.ROOM_ATTACH,
-            colours = { G.C.WHITE, lighten(HEX('AC8491'), 0.4), lighten(HEX('8190B3'), 0.2), lighten(HEX('909A8B'), 0.2), lighten(HEX('AFAA86'), 0.2), lighten(HEX('AB7F75'), 0.2), lighten(HEX('6F719A'), 0.2), lighten(HEX('8B7B95'), 0.2), },
+            colours = { lighten(HEX('AC8491'), 0.2), lighten(HEX('8190B3'), 0.2), lighten(HEX('909A8B'), 0.2), lighten(HEX('AFAA86'), 0.2), lighten(HEX('AB7F75'), 0.2), lighten(HEX('6F719A'), 0.2), lighten(HEX('8B7B95'), 0.2), },
             fill = true
         })
         G.booster_pack_sparkles.fade_alpha = 1
         G.booster_pack_sparkles:fade(1, 0)
     end,
+	cry_digital_hallucinations = class_digital_hallucinations_compat
 }
 
 
@@ -52,7 +64,7 @@ SMODS.Booster {
     weight = 4,
     atlas = "CustomBoosters",
     pos = { x = 1, y = 0 },
-    kind = 'Class',
+    kind = 'class',
     draw_hand = true,
     discovered = true,
     loc_vars = function(self, info_queue, card)
@@ -76,19 +88,20 @@ SMODS.Booster {
     particles = function(self)
         G.booster_pack_sparkles = Particles(1, 1, 0, 0, {
             timer = 0.015,
-            scale = 0.2,
+            scale = 0.3,
             initialize = true,
-            lifespan = 1,
-            speed = 1.1,
+            lifespan = 3,
+            speed = 0.2,
             padding = -1,
             attach = G.ROOM_ATTACH,
-            colours = { G.C.WHITE, lighten(HEX('AC8491'), 0.4), lighten(HEX('8190B3'), 0.2), lighten(HEX('909A8B'), 0.2), lighten(HEX('AFAA86'), 0.2), lighten(HEX('AB7F75'), 0.2), lighten(HEX('6F719A'), 0.2), lighten(HEX('8B7B95'), 0.2), },
+            colours = { lighten(HEX('AC8491'), 0.2), lighten(HEX('8190B3'), 0.2), lighten(HEX('909A8B'), 0.2), lighten(HEX('AFAA86'), 0.2), lighten(HEX('AB7F75'), 0.2), lighten(HEX('6F719A'), 0.2), lighten(HEX('8B7B95'), 0.2), },
             fill = true
         })
         G.booster_pack_sparkles.fade_alpha = 1
         G.booster_pack_sparkles:fade(1, 0)
     end,
-}
+	cry_digital_hallucinations = class_digital_hallucinations_compat
+ }
 
 SMODS.Booster {
     key = 'schedule_pack_jumbo',
@@ -97,7 +110,7 @@ SMODS.Booster {
     weight = 4,
     atlas = "CustomBoosters",
     pos = { x = 2, y = 0 },
-    kind = 'Class',
+    kind = 'class',
     draw_hand = true,
     discovered = true,
     loc_vars = function(self, info_queue, card)
@@ -121,18 +134,19 @@ SMODS.Booster {
     particles = function(self)
         G.booster_pack_sparkles = Particles(1, 1, 0, 0, {
             timer = 0.015,
-            scale = 0.2,
+            scale = 0.3,
             initialize = true,
-            lifespan = 1,
-            speed = 1.1,
+            lifespan = 3,
+            speed = 0.2,
             padding = -1,
             attach = G.ROOM_ATTACH,
-            colours = { G.C.WHITE, lighten(HEX('AC8491'), 0.4), lighten(HEX('8190B3'), 0.2), lighten(HEX('909A8B'), 0.2), lighten(HEX('AFAA86'), 0.2), lighten(HEX('AB7F75'), 0.2), lighten(HEX('6F719A'), 0.2), lighten(HEX('8B7B95'), 0.2), },
+            colours = { lighten(HEX('AC8491'), 0.2), lighten(HEX('8190B3'), 0.2), lighten(HEX('909A8B'), 0.2), lighten(HEX('AFAA86'), 0.2), lighten(HEX('AB7F75'), 0.2), lighten(HEX('6F719A'), 0.2), lighten(HEX('8B7B95'), 0.2), },
             fill = true
         })
         G.booster_pack_sparkles.fade_alpha = 1
         G.booster_pack_sparkles:fade(1, 0)
     end,
+	cry_digital_hallucinations = class_digital_hallucinations_compat
 }
 
 SMODS.Booster {
@@ -142,7 +156,7 @@ SMODS.Booster {
     weight = 1,
     atlas = "CustomBoosters",
     pos = { x = 3, y = 0 },
-    kind = 'Class',
+    kind = 'class',
     draw_hand = true,
     discovered = true,
     loc_vars = function(self, info_queue, card)
@@ -166,16 +180,17 @@ SMODS.Booster {
     particles = function(self)
         G.booster_pack_sparkles = Particles(1, 1, 0, 0, {
             timer = 0.015,
-            scale = 0.2,
+            scale = 0.3,
             initialize = true,
-            lifespan = 1,
-            speed = 1.1,
+            lifespan = 3,
+            speed = 0.2,
             padding = -1,
             attach = G.ROOM_ATTACH,
-            colours = { G.C.WHITE, lighten(HEX('AC8491'), 0.4), lighten(HEX('8190B3'), 0.2), lighten(HEX('909A8B'), 0.2), lighten(HEX('AFAA86'), 0.2), lighten(HEX('AB7F75'), 0.2), lighten(HEX('6F719A'), 0.2), lighten(HEX('8B7B95'), 0.2), },
+            colours = { lighten(HEX('AC8491'), 0.2), lighten(HEX('8190B3'), 0.2), lighten(HEX('909A8B'), 0.2), lighten(HEX('AFAA86'), 0.2), lighten(HEX('AB7F75'), 0.2), lighten(HEX('6F719A'), 0.2), lighten(HEX('8B7B95'), 0.2), },
             fill = true
         })
         G.booster_pack_sparkles.fade_alpha = 1
         G.booster_pack_sparkles:fade(1, 0)
     end,
+	cry_digital_hallucinations = class_digital_hallucinations_compat
 }

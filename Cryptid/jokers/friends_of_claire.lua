@@ -65,7 +65,45 @@ SMODS.Joker {
 	end
 }
 
-
+-- Anova
+SMODS.Joker {
+    key = 'anova',
+    config = {
+        extra = {
+            anovaScoringCards = 6,
+            anovaXmult = 4,
+			is_expansion = true
+        }
+    },
+    pos = {
+        x = 1,
+        y = 0
+    },
+    cost = 7,
+    rarity = 3,
+    blueprint_compat = true,
+    eternal_compat = true,
+    perishable_compat = true,
+    unlocked = true,
+    atlas = 'CryptidJokers',
+    loc_vars = function(self, info_queue, card)
+        return {
+            vars = {
+				card.ability.extra.anovaScoringCards,
+                card.ability.extra.anovaXmult,
+            }
+        }
+    end,
+	calculate = function(self, card, context)
+        if context.joker_main then
+            if #context.scoring_hand >= card.ability.extra.anovaScoringCards then
+                return {
+                    Xmult = card.ability.extra.anovaXmult
+                }
+            end
+        end
+    end
+}
 
 
 

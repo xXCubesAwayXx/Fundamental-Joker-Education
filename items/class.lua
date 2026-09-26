@@ -826,7 +826,7 @@ SMODS.Consumable {
 			 class_card_achievement()
         do
             if SMODS.pseudorandom_probability(card, 'group0', card.ability.extra.numerator_0, card.ability.extra.odds_0, 'c_fpe_phys_ed', false) then
-                        card_eval_status_text(card, 'extra', nil, nil, nil, {message = "+"..tostring(card.ability.extra.booster_slots0)..' Booster Slots', colour = G.C.BLUE})
+                        card_eval_status_text(card, 'extra', nil, nil, nil, {message = "+"..tostring(card.ability.extra.shop_slots0)..' Shop Slots', colour = G.C.BLUE})
                         change_shop_size(card.ability.extra.shop_slots0)
             else
             G.E_MANAGER:add_event(Event({
