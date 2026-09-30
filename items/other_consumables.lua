@@ -12,7 +12,7 @@ SMODS.Consumable {
     discovered = false,
     hidden = true,
     soul_set = 'class',
-    soul_rate = 0.015,
+    soul_rate = 0.005,
     can_repeat_soul = true,
     atlas = 'CustomConsumables',
     use = function(self, card, area, copier)
@@ -63,7 +63,7 @@ SMODS.Consumable {
     discovered = false,
     hidden = true,
     soul_set = 'class',
-    soul_rate = 0.015,
+    soul_rate = 0.010,
     can_repeat_soul = true,
     atlas = 'CustomConsumables',
     use = function(self, card, area, copier)

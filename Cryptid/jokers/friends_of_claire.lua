@@ -105,7 +105,57 @@ SMODS.Joker {
     end
 }
 
-
-
+--Agetha
+SMODS.Joker {
+    key = 'agetha',
+    config = {
+        extra = {
+			agethaBonus = 0,
+			agethaBonusMod = 4,
+			is_expansion = true
+        }
+    },
+    pos = {
+        x = 2,
+        y = 0
+    },
+    cost = 12,
+    rarity = 'cry_epic',
+    blueprint_compat = false,
+    eternal_compat = true,
+    perishable_compat = true,
+    unlocked = true,
+    atlas = 'CryptidJokers',
+    loc_vars = function(self, info_queue, card)
+        return {
+            vars = {
+				card.ability.extra.agethaBonus,
+				card.ability.extra.agethaBonusMod,
+            }
+        }
+    end,
+    calc_dollar_bonus = function(self, card)
+        local blind_reward = 0
+        blind_reward = blind_reward + math.max(card.ability.extra.agethaBonus, 0)
+        if blind_reward > 0 then
+            return blind_reward
+        end
+    end,
+    calculate = function(self, card, context)
+        if 	context.using_consumeable and context.consumeable.ability.set == "Code" and not context.consumeable.beginning_end and not context.blueprint then
+            do
+            return {
+                func = function()
+                    card.ability.extra.agethaBonus = (card.ability.extra.agethaBonus) + card.ability.extra.agethaBonusMod
+                    return true
+                end,
+				sound = "cry_e_glitched",
+				message = localize('k_agetha_scale'),
+                colour = G.C.GREEN
+            }
+        end
+    end
+end
+}
 
 end

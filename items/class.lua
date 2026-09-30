@@ -66,7 +66,7 @@ SMODS.Consumable {
             play_sound('timpani')
             return {
                 message = created_joker and localize('k_plus_joker'),
-                colour = G.C.GREEN
+                colour = G.C.SECONDARY_SET.class
             }
         end
 		
@@ -111,6 +111,7 @@ SMODS.Consumable {
         local used_card = copier or card
         if #G.hand.highlighted <= 2 and #G.hand.highlighted > 0 then
             if SMODS.pseudorandom_probability(card, 'group0', card.ability.extra.numerator_0, card.ability.extra.odds_0, 'c_fpe_mathematics', false) then
+            card_eval_status_text(card, 'extra', nil, nil, nil, {message = "+"..tostring(card.ability.extra.pb_mult0).."Bonus Mult", colour = G.C.SECONDARY_SET.class})
             G.E_MANAGER:add_event(Event({
                 trigger = 'after', delay = 0.4,
                 func = function() play_sound('tarot1'); used_card:juice_up(0.3, 0.5); return true end
@@ -154,7 +155,7 @@ SMODS.Consumable {
                         scale = 1.3,
                         hold = 1.4,
                         major = card,
-                        backdrop_colour = G.C.SECONDARY_SET.Tarot,
+                        backdrop_colour = G.C.SECONDARY_SET.class,
                         align = (G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK or G.STATE == G.STATES.SMODS_BOOSTER_OPENED) and
                             'tm' or 'cm',
                         offset = { x = 0, y = (G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK or G.STATE == G.STATES.SMODS_BOOSTER_OPENED) and -0.2 or 0 },
@@ -264,7 +265,7 @@ SMODS.Consumable {
                         scale = 1.3,
                         hold = 1.4,
                         major = card,
-                        backdrop_colour = G.C.SECONDARY_SET.Tarot,
+                        backdrop_colour = G.C.SECONDARY_SET.class,
                         align = (G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK or G.STATE == G.STATES.SMODS_BOOSTER_OPENED) and
                             'tm' or 'cm',
                         offset = { x = 0, y = (G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK or G.STATE == G.STATES.SMODS_BOOSTER_OPENED) and -0.2 or 0 },
@@ -336,7 +337,7 @@ SMODS.Consumable {
       SMODS.upgrade_poker_hands({hands = most_played, from = card, level_up = 3})
                 return {
                     message = localize('k_level_up_ex'),
-                    colour = G.C.GREEN
+                    colour = G.C.SECONDARY_SET.class
                 }
             else
             G.E_MANAGER:add_event(Event({
@@ -348,7 +349,7 @@ SMODS.Consumable {
                         scale = 1.3,
                         hold = 1.4,
                         major = card,
-                        backdrop_colour = G.C.SECONDARY_SET.Tarot,
+                        backdrop_colour = G.C.SECONDARY_SET.class,
                         align = (G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK or G.STATE == G.STATES.SMODS_BOOSTER_OPENED) and
                             'tm' or 'cm',
                         offset = { x = 0, y = (G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK or G.STATE == G.STATES.SMODS_BOOSTER_OPENED) and -0.2 or 0 },
@@ -410,7 +411,7 @@ SMODS.Consumable {
 			 check_for_unlock({ type = "ach_first_class_card" })
 			 class_card_achievement()
             if SMODS.pseudorandom_probability(card, 'group0', card.ability.extra.numerator_0, card.ability.extra.odds_0, 'c_fpe_history', false) then
-                        card_eval_status_text(card, 'extra', nil, nil, nil, {message = "+"..tostring(card.ability.extra.hands0).." Hands", colour = G.C.GREEN})
+                        card_eval_status_text(card, 'extra', nil, nil, nil, {message = "+"..tostring(card.ability.extra.hands0).." Hands", colour = G.C.SECONDARY_SET.class})
                         G.GAME.round_resets.hands = G.GAME.round_resets.hands + card.ability.extra.hands0
                         ease_hands_played(card.ability.extra.hands0)
             else
@@ -484,7 +485,7 @@ SMODS.Consumable {
 			 check_for_unlock({ type = "ach_first_class_card" })
 			 class_card_achievement()
             if SMODS.pseudorandom_probability(card, 'group0', card.ability.extra.numerator_0, card.ability.extra.odds_0, 'c_fpe_art', false) then
-                        card_eval_status_text(card, 'extra', nil, nil, nil, {message = "+"..tostring(card.ability.extra.hand_size0)..' Hand Limit', colour = G.C.BLUE})
+                        card_eval_status_text(card, 'extra', nil, nil, nil, {message = "+"..tostring(card.ability.extra.hand_size0)..' Hand Limit', colour = G.C.SECONDARY_SET.class})
                         G.hand:change_size(card.ability.extra.hand_size0)
             else
             G.E_MANAGER:add_event(Event({
@@ -496,7 +497,7 @@ SMODS.Consumable {
                         scale = 1.3,
                         hold = 1.4,
                         major = card,
-                        backdrop_colour = G.C.SECONDARY_SET.Tarot,
+                        backdrop_colour = G.C.SECONDARY_SET.class,
                         align = (G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK or G.STATE == G.STATES.SMODS_BOOSTER_OPENED) and
                             'tm' or 'cm',
                         offset = { x = 0, y = (G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK or G.STATE == G.STATES.SMODS_BOOSTER_OPENED) and -0.2 or 0 },
@@ -563,7 +564,7 @@ SMODS.Consumable {
 			 check_for_unlock({ type = "ach_first_class_card" })
 			 class_card_achievement()
             if SMODS.pseudorandom_probability(card, 'group0', card.ability.extra.numerator_0, card.ability.extra.odds_0, 'c_fpe_music', false) then
-                        card_eval_status_text(card, 'extra', nil, nil, nil, {message = "+"..tostring(card.ability.extra.discards0).." Discards", colour = G.C.GREEN})
+                        card_eval_status_text(card, 'extra', nil, nil, nil, {message = "+"..tostring(card.ability.extra.discards0).." Discards", colour = G.C.SECONDARY_SET.class})
                         G.GAME.round_resets.discards = G.GAME.round_resets.discards + card.ability.extra.discards0
                         ease_discard(card.ability.extra.discards0)
             else
@@ -576,7 +577,7 @@ SMODS.Consumable {
                         scale = 1.3,
                         hold = 1.4,
                         major = card,
-                        backdrop_colour = G.C.SECONDARY_SET.Tarot,
+                        backdrop_colour = G.C.SECONDARY_SET.class,
                         align = (G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK or G.STATE == G.STATES.SMODS_BOOSTER_OPENED) and
                             'tm' or 'cm',
                         offset = { x = 0, y = (G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK or G.STATE == G.STATES.SMODS_BOOSTER_OPENED) and -0.2 or 0 },
@@ -643,6 +644,7 @@ SMODS.Consumable {
         local used_card = copier or card
         if #G.hand.highlighted <= 2 and #G.hand.highlighted > 0 then
             if SMODS.pseudorandom_probability(card, 'group0', card.ability.extra.numerator_0, card.ability.extra.odds_0, 'c_fpe_geometry', false) then
+            card_eval_status_text(card, 'extra', nil, nil, nil, {message = "+"..tostring(card.ability.extra.pb_bonus0).."Bonus Chips", colour = G.C.SECONDARY_SET.class})
             G.E_MANAGER:add_event(Event({
                 trigger = 'after', delay = 0.4,
                 func = function() play_sound('tarot1'); used_card:juice_up(0.3, 0.5); return true end
@@ -686,7 +688,7 @@ SMODS.Consumable {
                         scale = 1.3,
                         hold = 1.4,
                         major = card,
-                        backdrop_colour = G.C.SECONDARY_SET.Tarot,
+                        backdrop_colour = G.C.SECONDARY_SET.class,
                         align = (G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK or G.STATE == G.STATES.SMODS_BOOSTER_OPENED) and
                             'tm' or 'cm',
                         offset = { x = 0, y = (G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK or G.STATE == G.STATES.SMODS_BOOSTER_OPENED) and -0.2 or 0 },
@@ -749,6 +751,7 @@ SMODS.Consumable {
 			 class_card_achievement()
         if #G.jokers.cards > card.ability.extra.joker_count_value0 then
             if SMODS.pseudorandom_probability(card, 'group0', card.ability.extra.numerator_0, card.ability.extra.odds_0, 'c_fpe_theatre', false) then
+            card_eval_status_text(card, 'extra', nil, nil, nil, {message = localize('k_edition_updated'), colour = G.C.SECONDARY_SET.class})
             local editionless_jokers = SMODS.Edition:get_edition_cards(G.jokers, true)
 
             local eligible_card = pseudorandom_element(editionless_jokers, 'fpe_theatre')
@@ -763,7 +766,7 @@ SMODS.Consumable {
                         scale = 1.3,
                         hold = 1.4,
                         major = card,
-                        backdrop_colour = G.C.SECONDARY_SET.Tarot,
+                        backdrop_colour = G.C.SECONDARY_SET.class,
                         align = (G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK or G.STATE == G.STATES.SMODS_BOOSTER_OPENED) and
                             'tm' or 'cm',
                         offset = { x = 0, y = (G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK or G.STATE == G.STATES.SMODS_BOOSTER_OPENED) and -0.2 or 0 },
@@ -826,7 +829,7 @@ SMODS.Consumable {
 			 class_card_achievement()
         do
             if SMODS.pseudorandom_probability(card, 'group0', card.ability.extra.numerator_0, card.ability.extra.odds_0, 'c_fpe_phys_ed', false) then
-                        card_eval_status_text(card, 'extra', nil, nil, nil, {message = "+"..tostring(card.ability.extra.shop_slots0)..' Shop Slots', colour = G.C.BLUE})
+                        card_eval_status_text(card, 'extra', nil, nil, nil, {message = "+"..tostring(card.ability.extra.shop_slots0)..' Shop Slots', colour = G.C.SECONDARY_SET.class})
                         change_shop_size(card.ability.extra.shop_slots0)
             else
             G.E_MANAGER:add_event(Event({
@@ -838,7 +841,7 @@ SMODS.Consumable {
                         scale = 1.3,
                         hold = 1.4,
                         major = card,
-                        backdrop_colour = G.C.SECONDARY_SET.Tarot,
+                        backdrop_colour = G.C.SECONDARY_SET.class,
                         align = (G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK or G.STATE == G.STATES.SMODS_BOOSTER_OPENED) and
                             'tm' or 'cm',
                         offset = { x = 0, y = (G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK or G.STATE == G.STATES.SMODS_BOOSTER_OPENED) and -0.2 or 0 },
@@ -900,7 +903,7 @@ SMODS.Consumable {
 			 check_for_unlock({ type = "ach_first_class_card" })
 			 class_card_achievement()
             if SMODS.pseudorandom_probability(card, 'group0', card.ability.extra.numerator_0, card.ability.extra.odds_0, 'c_fpe_swimming', false) then
-                        card_eval_status_text(card, 'extra', nil, nil, nil, {message = "+"..tostring(card.ability.extra.booster_slots0)..' Booster Slots', colour = G.C.BLUE})
+                        card_eval_status_text(card, 'extra', nil, nil, nil, {message = "+"..tostring(card.ability.extra.booster_slots0)..' Booster Slots', colour = G.C.SECONDARY_SET.class})
                         SMODS.change_booster_limit(card.ability.extra.booster_slots0)
             else
             G.E_MANAGER:add_event(Event({
@@ -912,7 +915,7 @@ SMODS.Consumable {
                         scale = 1.3,
                         hold = 1.4,
                         major = card,
-                        backdrop_colour = G.C.SECONDARY_SET.Tarot,
+                        backdrop_colour = G.C.SECONDARY_SET.class,
                         align = (G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK or G.STATE == G.STATES.SMODS_BOOSTER_OPENED) and
                             'tm' or 'cm',
                         offset = { x = 0, y = (G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK or G.STATE == G.STATES.SMODS_BOOSTER_OPENED) and -0.2 or 0 },
@@ -979,6 +982,7 @@ SMODS.Consumable {
         local used_card = copier or card
         if #G.hand.highlighted <= card.ability.extra.cards_selected_value0 and #G.hand.highlighted > card.ability.extra.cards_selected_value1 then
             if SMODS.pseudorandom_probability(card, 'group0', card.ability.extra.numerator_0, card.ability.extra.odds_0, 'c_fpe_chorus', false) then
+            card_eval_status_text(card, 'extra', nil, nil, nil, {message = localize('k_edition_updated'), colour = G.C.SECONDARY_SET.class})
                 G.E_MANAGER:add_event(Event({
                 trigger = 'after', delay = 0.4,
                 func = function() play_sound('tarot1'); used_card:juice_up(0.3, 0.5); return true end
@@ -1009,7 +1013,7 @@ SMODS.Consumable {
                 }))
                 delay(0.5)
                 return {
-                    colour = G.C.SECONDARY_SET.Tarot
+                    colour = G.C.SECONDARY_SET.class
                 }
             else
             G.E_MANAGER:add_event(Event({
@@ -1021,7 +1025,7 @@ SMODS.Consumable {
                         scale = 1.3,
                         hold = 1.4,
                         major = card,
-                        backdrop_colour = G.C.SECONDARY_SET.Tarot,
+                        backdrop_colour = G.C.SECONDARY_SET.class,
                         align = (G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK or G.STATE == G.STATES.SMODS_BOOSTER_OPENED) and
                             'tm' or 'cm',
                         offset = { x = 0, y = (G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK or G.STATE == G.STATES.SMODS_BOOSTER_OPENED) and -0.2 or 0 },
@@ -1096,7 +1100,7 @@ SMODS.Consumable {
                 end
                 return {
                     message = created_joker and localize('k_plus_joker'),
-                    colour = G.C.GREEN
+                    colour = G.C.SECONDARY_SET.class
                 }
             else
             G.E_MANAGER:add_event(Event({
@@ -1108,7 +1112,7 @@ SMODS.Consumable {
                         scale = 1.3,
                         hold = 1.4,
                         major = card,
-                        backdrop_colour = G.C.SECONDARY_SET.Tarot,
+                        backdrop_colour = G.C.SECONDARY_SET.class,
                         align = (G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK or G.STATE == G.STATES.SMODS_BOOSTER_OPENED) and
                             'tm' or 'cm',
                         offset = { x = 0, y = (G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK or G.STATE == G.STATES.SMODS_BOOSTER_OPENED) and -0.2 or 0 },
@@ -1174,7 +1178,7 @@ SMODS.Consumable {
                 local mod = -card.ability.extra.ante_value0; ease_ante(mod); G.GAME.round_resets.blind_ante = (G.GAME.round_resets.blind_ante or 0) + mod
                 return {
                     message = 'Ante Updated',
-                    colour = G.C.YELLOW
+                    colour = G.C.SECONDARY_SET.class
                 }
             else
             G.E_MANAGER:add_event(Event({
@@ -1186,7 +1190,7 @@ SMODS.Consumable {
                         scale = 1.3,
                         hold = 1.4,
                         major = card,
-                        backdrop_colour = G.C.SECONDARY_SET.Tarot,
+                        backdrop_colour = G.C.SECONDARY_SET.class,
                         align = (G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK or G.STATE == G.STATES.SMODS_BOOSTER_OPENED) and
                             'tm' or 'cm',
                         offset = { x = 0, y = (G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK or G.STATE == G.STATES.SMODS_BOOSTER_OPENED) and -0.2 or 0 },
@@ -1243,8 +1247,8 @@ SMODS.Consumable {
         do
             for _ = 1, card.ability.extra.create_consumable_count0 do if #G.consumeables.cards + (G.GAME.consumeable_buffer or 0) < G.consumeables.config.card_limit then SMODS.add_card({ area = G.consumeables, soulable = true, set = 'class' }) end end
             return {
-                message = localize('k_plus_consumable'),
-                colour = G.C.GREEN
+                message = localize('k_plus_class'),
+                colour = G.C.SECONDARY_SET.class
             }
         end
     end,
@@ -1290,6 +1294,7 @@ SMODS.Consumable {
         local used_card = copier or card
         if #G.hand.highlighted == 1 then
             if SMODS.pseudorandom_probability(card, 'group0', card.ability.extra.numerator_0, card.ability.extra.odds_0, 'c_fpe_examination', false) then
+            card_eval_status_text(card, 'extra', nil, nil, nil, {message = localize('k_a_plus'), colour = G.C.SECONDARY_SET.class})
                 G.E_MANAGER:add_event(Event({
                 trigger = 'after', delay = 0.4,
                 func = function() play_sound('tarot1'); used_card:juice_up(0.3, 0.5); return true end
@@ -1318,10 +1323,6 @@ SMODS.Consumable {
                 func = function() G.hand:unhighlight_all(); return true end
                 }))
                 delay(0.5)
-                return {
-                    message = 'A+!',
-                    colour = G.C.SECONDARY_SET.Class
-                    }
             else
             G.E_MANAGER:add_event(Event({
                 trigger = 'after',
@@ -1332,7 +1333,7 @@ SMODS.Consumable {
                         scale = 1.3,
                         hold = 1.4,
                         major = card,
-                        backdrop_colour = G.C.SECONDARY_SET.Tarot,
+                        backdrop_colour = G.C.SECONDARY_SET.class,
                         align = (G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK or G.STATE == G.STATES.SMODS_BOOSTER_OPENED) and
                             'tm' or 'cm',
                         offset = { x = 0, y = (G.STATE == G.STATES.TAROT_PACK or G.STATE == G.STATES.SPECTRAL_PACK or G.STATE == G.STATES.SMODS_BOOSTER_OPENED) and -0.2 or 0 },

@@ -205,8 +205,8 @@ SMODS.Joker {
             do
                 if #G.consumeables.cards + (G.GAME.consumeable_buffer or 0) < G.consumeables.config.card_limit then SMODS.add_card({ area = G.consumeables, set = 'class' }) end
                 return {
-                    message = localize('k_plus_consumable'),
-                    colour = G.C.GREEN
+                    message = localize('k_plus_class'),
+                    colour = G.C.SECONDARY_SET.class
                 }
             end
         end
@@ -798,7 +798,17 @@ SMODS.Joker {
     end,
     remove_from_deck = function(self, card, from_debuff)
         G.GAME.modifiers.booster_size_mod = (G.GAME.modifiers.booster_size_mod or 0) - 1
+    end,
+    calculate = function(self, card, context)
+        if context.open_booster and context.main_eval then
+            do
+            return {
+                message = localize('k_zip_yarr'),
+                colour = G.C.SECONDARY_SET.class
+            }
+        end
     end
+end
 }
 
 -- Chip
@@ -1375,7 +1385,7 @@ SMODS.Joker {
                                     context.other_card:set_edition("e_negative", true)
                                         return true
                         end,
-                        message = 'Card Modified!',
+                        message = localize('k_updated_edition'),
                         colour = G.C.BLUE,
                         extra = {
                             func = function()

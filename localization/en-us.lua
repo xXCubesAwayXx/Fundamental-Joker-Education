@@ -409,6 +409,12 @@ return {
 					"If played hand has at least {C:attention}6 scoring cards{}, apply {X:mult,C:white}X4{} Mult",
 				},
 			},
+			j_fpe_agetha = {
+				name = "Agetha",
+				text = {
+					"This Joker gives {C:money}$4{} at the {C:attention}end-of-round payout{} for every used {C:code}Code{} card",
+				},
+			},
 		},
 		Voucher = {
 			v_fpe_class_merchant = {
@@ -598,6 +604,12 @@ misc = {
 			["alice_joker_badge"] = "Princess of Malice",
 			["expansion_joker_badge"] = "Dangerously Jolly Forest Expansion",
 			["k_spawn_alice"] = "WHAT HAVE YOU DONE!?",
+			["k_plus_class"] = "+1 Class",
+			["k_plus_consumable"] = "+1 Consumable",
+			["k_zip_yarr"] = "yarr!!!! XD",
+			["k_agetha_scale"] = "LET ME ENTER YOUR REALITY",
+			["k_edition_updated"] = "Edition Updated!",
+			["k_a_plus"] = "A+!",
 		},
 		["labels"] = {
 			["fpe_a_seal_seal"] = "A+ Seal",
