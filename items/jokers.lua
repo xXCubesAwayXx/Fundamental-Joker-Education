@@ -307,26 +307,16 @@ SMODS.Joker {
     loc_vars = function(self, info_queue, card)
         return {
             vars = {
-                card.ability.extra.petuniaChips
+                card.ability.extra.petuniaChips,
+                card.ability.extra.petuniaChips * (G.jokers and #G.jokers.cards or 0) 
             }
         }
     end,
     calculate = function(self, card, context)
-        if (context.end_of_round or context.reroll_shop or context.buying_card or context.selling_card or context.ending_shop or context.starting_shop or context.ending_booster or context.skipping_booster or context.open_booster or context.skip_blind or context.before or context.pre_discard or context.setting_blind or context.using_consumeable) then
-            do
-                return {
-                    func = function()
-                        card.ability.extra.petuniaChips = #G.jokers.cards * 15
-                        return true
-                    end,
-                    colour = G.C.BLUE
-                }
-            end
-        end
         if context.joker_main then
             do
                 return {
-                    chips = card.ability.extra.petuniaChips
+                    chips = card.ability.extra.petuniaChips * #G.jokers.cards
                 }
             end
         end
