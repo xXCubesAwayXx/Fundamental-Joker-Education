@@ -415,6 +415,14 @@ return {
 					"This Joker gives {C:money}$4{} at the {C:attention}end-of-round payout{} for every used {C:code}Code{} card",
 				},
 			},
+-- Exotic
+			j_fpe_katie = {
+				name = "Katie",
+				text = {
+					"+{X:talisman_emult,C:white}^0.2{} Mult for all cards {C:attention}in your full deck{} with an {C:dark_edition}Edition{}",
+					'{C:inactive}(Currently{} {X:talisman_emult,C:white}^#1#{} {C:inactive}Mult){}',
+					},
+				},
 		},
 		Voucher = {
 			v_fpe_class_merchant = {
@@ -603,6 +611,7 @@ misc = {
 			["teacher_joker_badge"] = "Faculty/Staff of Paper School",
 			["alice_joker_badge"] = "Princess of Malice",
 			["expansion_joker_badge"] = "Dangerously Jolly Forest Expansion",
+			["katie_joker_badge"] = "Kaaatie Herself",
 			["k_spawn_alice"] = "WHAT HAVE YOU DONE!?",
 			["k_plus_class"] = "+1 Class",
 			["k_plus_consumable"] = "+1 Consumable",
