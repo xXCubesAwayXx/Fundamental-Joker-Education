@@ -36,6 +36,30 @@ return {
 					"#1# in #2# chance for", "played cards to be destroyed"
 				}
 			},
+			bl_fpe_compass = {
+				name = "The Compass",
+				text = {
+					"If score catches on fire,", "halves money"
+				}
+			},
+			bl_fpe_cryptid = {
+				name = "The Cryptid",
+				text = {
+					"+0.1X blind requirements for every Consumable", "used this run when selected"
+				}
+			},
+			bl_fpe_flask = {
+				name = "The Flask",
+				text = {
+					"Played enhanced cards will", "have their enhancements removed"
+				}
+			},
+			bl_fpe_final_inquiry = {
+				name = "Indigo Inquiry",
+				text = {
+					"All enhanced cards are debuffed"
+				}
+			},
 		},		
 		
 		["class"] = {
