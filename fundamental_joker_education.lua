@@ -1,3 +1,4 @@
+-- Atlases
 SMODS.Atlas({
     key = "modicon",
     path = "ModIcon.png",
@@ -96,6 +97,15 @@ SMODS.Atlas({
 })
 
 SMODS.Atlas({
+    key = "CustomBlinds",
+    path = "CustomBlinds.png",
+    px = 34,
+    py = 34,
+    atlas_table = "ANIMATION_ATLAS",
+    frames = 21
+})
+
+SMODS.Atlas({
     key = "CryptidVouchers",
     path = "CryptidVouchers.png",
     px = 71,
@@ -125,12 +135,28 @@ SMODS.Atlas({
     py = 95,
     atlas_table = "ASSET_ATLAS"
 })
+SMODS.Atlas({
+    key = "CryptidDecks",
+    path = "CryptidDecks.png",
+    px = 71,
+    py = 95,
+    atlas_table = "ASSET_ATLAS"
+})
 
+-- Gradients
+SMODS.Gradient { 
+	key = 'maliceblind',
+	colours = { HEX("5D3B39"), HEX("6C1715")},
+	cycle = 3
+}
+
+-- More Stuff
 local NFS = require("nativefs")
 to_big = to_big or function(a) return a end
 lenient_bignum = lenient_bignum or function(a) return a end
 JF_GLOBALS = JF_GLOBALS or {}
 
+assert(SMODS.load_file("items/blinds.lua"))()
 assert(SMODS.load_file("items/class.lua"))()
 assert(SMODS.load_file("items/other_consumables.lua"))()
 assert(SMODS.load_file("items/sounds.lua"))()
@@ -147,6 +173,7 @@ assert(SMODS.load_file("cryptid/vouchers.lua"))()
 assert(SMODS.load_file("cryptid/jokers/friends_of_claire.lua"))()
 assert(SMODS.load_file("cryptid/jokers/exotic.lua"))()
 
+-- Badges
 local ref = Game.main_menu
 function Game:main_menu(change_context)
   for k, v in pairs(G.P_CENTERS) do

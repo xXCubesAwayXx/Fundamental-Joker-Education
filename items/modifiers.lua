@@ -2,7 +2,7 @@
 -- Paper
 SMODS.Enhancement {
     key = "paper",
-    name = "Paper",
+    name = "Paper Card",
     pos = { x = 0, y = 0 },
     config = {
         extra = {

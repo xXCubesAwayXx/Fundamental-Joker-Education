@@ -371,7 +371,7 @@ SMODS.Joker {
                     local scored_card = context.other_card
                     G.E_MANAGER:add_event(Event({
                     func = function()
-                            local random_edition = SMODS.poll_edition({ key = 'edit_card_edition', no_negative = true, guaranteed = true })
+                            local random_edition = SMODS.poll_edition({ key = 'edit_card_edition', no_negative = false, guaranteed = true })
                             if random_edition then
                                 scored_card:set_edition(random_edition, true)
                             end

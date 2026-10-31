@@ -24,7 +24,19 @@ return {
 		},
 		
 		Blind = {
-		},
+			bl_fpe_bully = {
+				name = "The Bully",
+				text = {
+					"#1# in #2# chance for", "cards to be debuffed"
+				}
+			},
+			bl_fpe_malice = {
+				name = "The Malice",
+				text = {
+					"#1# in #2# chance for", "played cards to be destroyed"
+				}
+			},
+		},		
 		
 		["class"] = {
 			c_fpe_the_halls = {
@@ -164,7 +176,7 @@ return {
 		
 		Enhanced  = {
 			m_fpe_paper = {
-				name = "Paper",
+				name = "Paper Card",
 				text = {
           				 "{C:white,X:chips}X#1#{} Chips",
          				 "{C:green}#2# in #3#{} chance to {C:red}destroy{} self after scoring"
